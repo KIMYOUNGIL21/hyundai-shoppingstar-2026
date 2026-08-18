@@ -6,3 +6,4 @@
 - 목표 시간: 약 5분
 - 공유 페이지: https://kimyoungil21.github.io/hyundai-shoppingstar-2026/
 - 3개 전략안 병합 검토: https://kimyoungil21.github.io/hyundai-shoppingstar-2026/review/
+- 최종 통합본 V1: https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/

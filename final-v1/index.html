@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>현대홈쇼핑 × 유튜브 쇼핑 — 최종 통합본 V1</title>
+  <meta name="description" content="현대홈쇼핑 영업전략담당 이경우 상무의 유튜브 쇼핑 제휴프로그램 발표 최종 통합본 V1. 5장, 약 5분 10초 구성입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="현대홈쇼핑 × 유튜브 쇼핑 — 최종 통합본 V1">
+  <meta property="og:description" content="20%로 시작하고, 추천 이후까지 책임집니다.">
+  <meta property="og:url" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/">
+  <meta property="og:image" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/og-final-v1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="현대홈쇼핑 × 유튜브 쇼핑 — 최종 통합본 V1">
+  <meta name="twitter:description" content="20%로 시작하고, 추천 이후까지 책임집니다.">
+  <meta name="twitter:image" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/og-final-v1.png">
+  <style>
+    @font-face {
+      font-family: "Pretendard Variable";
+      src: url("../_PretendardVariable.woff2") format("woff2");
+      font-weight: 100 900;
+      font-display: swap;
+    }
+
+    :root {
+      --ink: #161616;
+      --ink-2: #242423;
+      --paper: #f5f0e6;
+      --paper-2: #ebe2d3;
+      --card: #fffdf8;
+      --coral: #f05243;
+      --coral-dark: #c63a2d;
+      --teal: #0d7f78;
+      --gold: #b17b18;
+      --muted: #6c6963;
+      --line: rgba(22,22,22,.15);
+      --white: #fff;
+      --shadow: 0 22px 75px rgba(43,33,20,.12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 92% 3%, rgba(240,82,67,.10), transparent 28rem),
+        linear-gradient(180deg, #faf6ee 0%, var(--paper) 70%, #eee5d7 100%);
+      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.64;
+      word-break: keep-all;
+    }
+
+    a { color: inherit; }
+    button { font: inherit; }
+    .wrap { width: min(1200px, calc(100% - 40px)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      color: #f8f3ea;
+      background: rgba(22,22,22,.94);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(16px);
+    }
+    .topbar-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+    .brand-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--coral); }
+    .toolbar { display: flex; align-items: center; gap: 8px; }
+    .toolbar a, .toolbar button {
+      min-height: 36px;
+      padding: 0 13px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 999px;
+      color: #f8f3ea;
+      background: transparent;
+      font-size: 12px;
+      font-weight: 780;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .toolbar .primary { border-color: var(--coral); background: var(--coral); color: #fff; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 86px 0 66px;
+      color: var(--white);
+      background: var(--ink);
+    }
+    .hero::after {
+      content: "V1";
+      position: absolute;
+      right: -20px;
+      bottom: -95px;
+      color: rgba(255,255,255,.035);
+      font-size: 310px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -.09em;
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0,1.2fr) minmax(330px,.8fr);
+      align-items: end;
+      gap: 64px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffaaa1;
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .12em;
+    }
+    .eyebrow::before { content: ""; width: 38px; height: 2px; background: var(--coral); }
+    h1 {
+      margin: 22px 0 0;
+      font-size: clamp(45px, 7vw, 84px);
+      line-height: 1.02;
+      letter-spacing: -.065em;
+      font-weight: 880;
+    }
+    h1 em { color: var(--coral); font-style: normal; }
+    .hero-copy { max-width: 760px; margin: 26px 0 0; color: #c8c4bd; font-size: 17px; }
+    .identity-card {
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.055);
+      box-shadow: inset 4px 0 0 var(--coral);
+    }
+    .identity-card .version { color: #ffaaa1; font-size: 12px; font-weight: 850; letter-spacing: .1em; }
+    .identity-card strong { display: block; margin-top: 10px; font-size: 25px; line-height: 1.3; letter-spacing: -.035em; }
+    .identity-list { display: grid; gap: 10px; margin-top: 22px; }
+    .identity-line { display: flex; justify-content: space-between; gap: 18px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.12); font-size: 13px; }
+    .identity-line span:first-child { color: #aaa69f; }
+    .identity-line span:last-child { font-weight: 750; text-align: right; }
+
+    .summary-strip { border-bottom: 1px solid var(--line); background: rgba(245,240,230,.95); }
+    .summary-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .summary-item { padding: 24px 20px; border-left: 1px solid var(--line); }
+    .summary-item:first-child { border-left: 0; }
+    .summary-item b { display: block; color: var(--coral-dark); font-size: 12px; letter-spacing: .08em; }
+    .summary-item strong { display: block; margin-top: 7px; font-size: 18px; line-height: 1.35; letter-spacing: -.025em; }
+
+    .anchor-nav { border-bottom: 1px solid var(--line); background: rgba(255,253,248,.92); overflow-x: auto; }
+    .anchor-nav .wrap { display: flex; gap: 5px; padding-top: 11px; padding-bottom: 11px; }
+    .anchor-nav a { flex: 0 0 auto; padding: 7px 11px; border-radius: 6px; color: var(--muted); font-size: 12px; font-weight: 760; text-decoration: none; }
+    .anchor-nav a:hover { color: var(--ink); background: var(--paper-2); }
+
+    main { padding: 72px 0 110px; }
+    section { margin-top: 92px; scroll-margin-top: 126px; }
+    section:first-child { margin-top: 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: 175px minmax(0,1fr);
+      gap: 26px;
+      align-items: start;
+      margin-bottom: 30px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-no { color: var(--coral-dark); font-size: 12px; font-weight: 880; letter-spacing: .12em; }
+    h2 { margin: 0; font-size: clamp(30px, 4.2vw, 48px); line-height: 1.13; letter-spacing: -.05em; }
+    .section-intro { max-width: 850px; margin: 12px 0 0; color: var(--muted); }
+
+    .thesis {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .thesis > div { padding: 36px; }
+    .thesis > div + div { border-left: 1px solid var(--line); background: var(--ink); color: var(--white); }
+    .mini-label { display: block; margin-bottom: 12px; color: var(--coral-dark); font-size: 12px; font-weight: 850; letter-spacing: .1em; }
+    .thesis > div + div .mini-label { color: #ffaaa1; }
+    .thesis blockquote { margin: 0; font-size: clamp(26px, 3.5vw, 40px); line-height: 1.35; letter-spacing: -.045em; font-weight: 830; }
+    .thesis p { margin: 16px 0 0; color: var(--muted); }
+    .thesis > div + div p { color: #bbb7b0; }
+
+    .story-flow { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 20px; }
+    .story-step { padding: 24px; border: 1px solid var(--line); background: var(--card); }
+    .story-step b { color: var(--coral-dark); font-size: 12px; letter-spacing: .08em; }
+    .story-step strong { display: block; margin-top: 8px; font-size: 19px; line-height: 1.35; letter-spacing: -.025em; }
+    .story-step p { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+
+    .slide-list { display: grid; gap: 20px; }
+    .slide-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--card);
+      box-shadow: 0 14px 50px rgba(43,33,20,.08);
+    }
+    .slide-top {
+      display: grid;
+      grid-template-columns: 155px minmax(0,1fr) 190px;
+      gap: 24px;
+      align-items: center;
+      padding: 24px 28px;
+      color: var(--white);
+      background: var(--ink);
+    }
+    .slide-index { color: #ffaaa1; font-size: 12px; font-weight: 850; letter-spacing: .1em; }
+    .slide-title { margin: 0; font-size: 26px; line-height: 1.28; letter-spacing: -.035em; }
+    .slide-time { justify-self: end; color: #d0cbc3; font-size: 13px; font-variant-numeric: tabular-nums; }
+    .slide-body { display: grid; grid-template-columns: .8fr 1.2fr; }
+    .screen-copy { padding: 30px; border-right: 1px solid var(--line); background: #f0e8db; }
+    .screen-copy .label, .speech .label, .director-note .label { color: var(--coral-dark); font-size: 11px; font-weight: 880; letter-spacing: .1em; }
+    .screen-copy h4 { margin: 12px 0 0; font-size: 28px; line-height: 1.3; letter-spacing: -.04em; }
+    .screen-copy p { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+    .visual-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+    .visual-chip { padding: 7px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 12px; font-weight: 750; }
+    .speech { padding: 30px 32px; }
+    .speech p { margin: 12px 0 0; font-size: 17px; line-height: 1.82; }
+    .speech strong { color: var(--coral-dark); }
+    .director-note { padding: 18px 28px; border-top: 1px solid var(--line); background: #fff8f3; }
+    .director-note p { margin: 7px 0 0; color: #5d504b; font-size: 13px; }
+    .fact-note { padding: 15px 28px; border-top: 1px solid var(--line); color: var(--muted); background: #faf8f3; font-size: 12px; }
+
+    .brief-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 18px; }
+    .brief-index { display: grid; gap: 12px; align-content: start; }
+    .brief-chip { padding: 18px 20px; border: 1px solid var(--line); background: var(--card); }
+    .brief-chip b { color: var(--coral-dark); font-size: 12px; }
+    .brief-chip strong { display: block; margin-top: 5px; font-size: 17px; }
+    .brief-copy { padding: 34px; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); }
+    .brief-copy h3 { margin: 0; font-size: 28px; letter-spacing: -.04em; }
+    .brief-copy h4 { margin: 28px 0 8px; font-size: 18px; }
+    .brief-copy p { margin: 9px 0; color: var(--ink-2); }
+    .brief-copy .emphasis { padding: 18px 20px; margin-top: 22px; border-left: 5px solid var(--coral); background: #fff4ef; font-weight: 700; }
+
+    .full-script {
+      padding: 38px;
+      color: #f7f2e9;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+    }
+    .script-meta { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.14); color: #b8b4ad; font-size: 12px; }
+    .script-text { max-width: 940px; margin: 0 auto; padding-top: 24px; }
+    .script-text p { margin: 0; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.10); font-size: 18px; line-height: 1.9; }
+    .script-text p:last-child { border-bottom: 0; }
+    .beat { display: inline-block; min-width: 70px; color: #ff978d; font-size: 12px; font-weight: 850; font-variant-numeric: tabular-nums; vertical-align: top; }
+    .script-text strong { color: #ff9c92; }
+
+    .check-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+    .check-card { padding: 25px; border: 1px solid var(--line); background: var(--card); }
+    .check-card b { color: var(--coral-dark); font-size: 12px; letter-spacing: .08em; }
+    .check-card h3 { margin: 8px 0 10px; font-size: 21px; }
+    .check-card ul { margin: 0; padding-left: 20px; }
+    .check-card li { margin: 8px 0; color: var(--muted); font-size: 14px; }
+    .check-card li::marker { color: var(--coral); }
+
+    .sources { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .source-card { display: block; padding: 22px; border: 1px solid var(--line); background: var(--card); text-decoration: none; }
+    .source-card b { display: block; color: var(--coral-dark); font-size: 12px; }
+    .source-card strong { display: block; margin-top: 8px; font-size: 17px; line-height: 1.35; }
+    .source-card span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; }
+    .source-card:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(43,33,20,.09); }
+
+    footer { padding: 30px 0 52px; color: var(--muted); font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+
+    .speaker-mode .hero, .speaker-mode .summary-strip, .speaker-mode .anchor-nav,
+    .speaker-mode main > section:not(#script), .speaker-mode footer { display: none; }
+    .speaker-mode main { padding: 22px 0; background: var(--ink); min-height: calc(100vh - 64px); }
+    .speaker-mode #script { margin: 0; }
+    .speaker-mode #script .section-head { display: none; }
+    .speaker-mode .full-script { box-shadow: none; }
+
+    @media (max-width: 930px) {
+      .hero-grid, .thesis, .brief-grid { grid-template-columns: 1fr; }
+      .thesis > div + div { border-left: 0; border-top: 1px solid var(--line); }
+      .summary-grid, .story-flow { grid-template-columns: repeat(2,1fr); }
+      .summary-item:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+      .summary-item:nth-child(4) { border-top: 1px solid var(--line); }
+      .slide-top { grid-template-columns: 110px minmax(0,1fr) 145px; }
+      .slide-body { grid-template-columns: 1fr; }
+      .screen-copy { border-right: 0; border-bottom: 1px solid var(--line); }
+      .sources { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 650px) {
+      .wrap { width: min(100% - 26px, 1200px); }
+      .topbar-inner { min-height: 57px; }
+      .toolbar a { display: none; }
+      .hero { padding: 58px 0 46px; }
+      .hero::after { font-size: 200px; }
+      .summary-grid, .story-flow, .check-grid { grid-template-columns: 1fr; }
+      .summary-item { border-left: 0; border-top: 1px solid var(--line); }
+      .summary-item:first-child { border-top: 0; }
+      main { padding-top: 50px; }
+      section { margin-top: 66px; }
+      .section-head { grid-template-columns: 1fr; gap: 6px; }
+      .slide-top { grid-template-columns: 1fr; gap: 4px; }
+      .slide-time { justify-self: start; }
+      .screen-copy, .speech, .director-note, .brief-copy, .full-script { padding: 22px; }
+      .speech p, .script-text p { font-size: 16px; }
+      .script-meta, .footer-inner { flex-direction: column; }
+      .beat { display: block; margin-bottom: 5px; }
+    }
+
+    @media print {
+      .topbar, .anchor-nav, .toolbar { display: none !important; }
+      body { background: #fff; }
+      .hero { padding: 36px 0; }
+      main { padding: 38px 0; }
+      section { margin-top: 46px; break-inside: avoid; }
+      .slide-card, .check-card, .source-card { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span>최종 통합본 V1</a>
+      <div class="toolbar">
+        <a href="../review/">병합 검토본</a>
+        <a href="../">이전 큐시트</a>
+        <button id="speakerMode" class="primary" type="button">발표자 모드</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">FINAL INTEGRATED CUE SHEET · V1</div>
+        <h1><em>20%로 시작하고,</em><br>추천 이후까지 책임집니다.</h1>
+        <p class="hero-copy">크리에이터가 듣고 싶은 조건을 먼저 밝히고, 현대홈쇼핑만의 상품 선별력과 추천 이후의 고객 경험 운영으로 신뢰를 완성하는 5장 구성입니다.</p>
+      </div>
+      <aside class="identity-card">
+        <span class="version">APPROVED DIRECTION</span>
+        <strong>태그 전에는 상품을 고르고,<br>태그 뒤에는 고객 경험을 책임집니다.</strong>
+        <div class="identity-list">
+          <div class="identity-line"><span>발표자</span><span>영업전략담당 이경우 상무</span></div>
+          <div class="identity-line"><span>목표 시간</span><span>약 5분 10초 · 최대 6분</span></div>
+          <div class="identity-line"><span>형식</span><span>5장 · 구글 제작용 큐시트</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="summary-strip">
+    <div class="wrap summary-grid">
+      <div class="summary-item"><b>WHO</b><strong>오늘 참석한 쇼핑스타 전원</strong></div>
+      <div class="summary-item"><b>WHEN</b><strong>9월 1일 상품 공개 · 9월 7일 시작</strong></div>
+      <div class="summary-item"><b>OFFER</b><strong>첫 한 달 20% · 이후 최소 10% · 일부 상품 제외</strong></div>
+      <div class="summary-item"><b>PROMISE</b><strong>상품 선별부터 판매 이후 CS까지</strong></div>
+    </div>
+  </div>
+
+  <nav class="anchor-nav" aria-label="페이지 목차">
+    <div class="wrap">
+      <a href="#strategy">전략</a>
+      <a href="#slides">5장 큐시트</a>
+      <a href="#brief">구글 제작 브리프</a>
+      <a href="#script">전체 원고</a>
+      <a href="#checks">최종 체크</a>
+      <a href="#sources">근거</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="strategy">
+      <div class="section-head">
+        <div class="section-no">01 · MESSAGE STRATEGY</div>
+        <div>
+          <h2>조건으로 귀를 열고,<br>현대홈쇼핑의 책임으로 기억됩니다.</h2>
+          <p class="section-intro">상품력과 회사소개는 신뢰를 만드는 근거입니다. 발표의 중심은 어디까지나 크리에이터가 팬과 콘텐츠에 집중할 수 있도록 추천 전과 추천 이후를 현대홈쇼핑이 맡는다는 약속입니다.</p>
+        </div>
+      </div>
+      <div class="thesis">
+        <div>
+          <span class="mini-label">무대에서 남길 한 문장</span>
+          <blockquote>“현대홈쇼핑은 수수료만 제공하는 제휴사가 아니라, 여러분의 추천 이후까지 책임지는 커머스 파트너가 되겠습니다.”</blockquote>
+          <p>20%는 가장 먼저 말하되, 마지막 문장은 “그 뒤는 저희가 맡겠습니다”로 끝냅니다.</p>
+        </div>
+        <div>
+          <span class="mini-label">발표의 내부 논리</span>
+          <blockquote>상품 → 조건 → 신뢰 → 지원 → 행동</blockquote>
+          <p>회사 자랑의 순서가 아니라 크리에이터가 실제로 제휴사를 판단하는 순서로 구성합니다.</p>
+        </div>
+      </div>
+      <div class="story-flow">
+        <div class="story-step"><b>01 · HOOK</b><strong>첫 한 달 20%</strong><p>조건을 먼저 공개해 집중을 잡습니다.</p></div>
+        <div class="story-step"><b>02 · REASON</b><strong>팔 만한 상품</strong><p>명품 직매입·백화점 상품·PB를 보여줍니다.</p></div>
+        <div class="story-step"><b>03 · TRUST</b><strong>추천 전후의 책임</strong><p>품질 선별과 판매 이후 CS를 연결합니다.</p></div>
+        <div class="story-step"><b>04 · ACTION</b><strong>바로 시작할 지원</strong><p>핫딜·온보딩·전담채널·현장 혜택입니다.</p></div>
+      </div>
+    </section>
+
+    <section id="slides">
+      <div class="section-head">
+        <div class="section-no">02 · FIVE SLIDES</div>
+        <div>
+          <h2>슬라이드별 최종 큐시트</h2>
+          <p class="section-intro">화면에는 기억할 문구만 남기고, 상세 설명은 상무님의 발화와 제작 메모로 분리했습니다.</p>
+        </div>
+      </div>
+
+      <div class="slide-list">
+        <article class="slide-card">
+          <div class="slide-top">
+            <div class="slide-index">SLIDE 01 · HOOK</div>
+            <h3 class="slide-title">20%. 그런데 아무 상품이나 태그하시지는 않겠죠.</h3>
+            <div class="slide-time">00:00–00:40</div>
+          </div>
+          <div class="slide-body">
+            <div class="screen-copy">
+              <span class="label">화면 핵심 문구</span>
+              <h4>20%로 시작하고,<br>추천 이후까지 책임집니다.</h4>
+              <div class="visual-chips"><span class="visual-chip">9월 7일 시작</span><span class="visual-chip">첫 한 달</span><span class="visual-chip">전원 참여 가능</span></div>
+              <p>첫 화면은 ‘20%’를 가장 크게 보여주고, 발화 중간에 ‘이름 + 팬의 신뢰’로 전환합니다.</p>
+            </div>
+            <div class="speech">
+              <span class="label">이경우 상무 발화</span>
+              <p>안녕하세요. 현대홈쇼핑 영업전략담당 이경우입니다. 오늘 가장 먼저 드릴 숫자는 <strong>20%</strong>입니다. 9월 7일부터 한 달간, 오늘 이 자리에 계신 모든 쇼핑스타분이 참여하실 수 있습니다. 그런데 수수료가 높다고 아무 상품이나 태그하시지는 않겠죠. 상품을 태그하는 순간 여러분의 이름과 팬의 신뢰도 함께 걸리기 때문입니다. 그래서 현대홈쇼핑은 수수료만 말씀드리지 않겠습니다. <strong>팔 만한 상품과 추천 이후의 고객 경험까지</strong> 함께 준비하겠습니다.</p>
+            </div>
+          </div>
+          <div class="director-note"><span class="label">구글 제작 메모</span><p>회사 연혁이나 긴 소개로 시작하지 않습니다. ‘20%’가 화면을 장악한 뒤, “그런데”에서 팬의 신뢰 메시지로 전환합니다.</p></div>
+        </article>
+
+        <article class="slide-card">
+          <div class="slide-top">
+            <div class="slide-index">SLIDE 02 · PRODUCT</div>
+            <h3 class="slide-title">새로운 파트너, 팔 만한 상품을 준비해 왔습니다.</h3>
+            <div class="slide-time">00:40–01:25</div>
+          </div>
+          <div class="slide-body">
+            <div class="screen-copy">
+              <span class="label">화면 핵심 문구</span>
+              <h4>정품은 확실하게.<br>상품은 다양하게.</h4>
+              <div class="visual-chips"><span class="visual-chip">명품 직매입</span><span class="visual-chip">현대백화점 상품</span><span class="visual-chip">알레보 · 라씨엔토 · 머티리얼랩</span></div>
+              <p>회사소개는 TV홈쇼핑·Hmall·쇼라·코아시스 네 개의 짧은 시각 요소로만 보여줍니다.</p>
+            </div>
+            <div class="speech">
+              <span class="label">이경우 상무 발화</span>
+              <p>현대홈쇼핑은 현대백화점그룹의 유통사로, TV홈쇼핑과 온라인 Hmall, 모바일 라이브 <strong>쇼라</strong>, 오프라인 뷰티 편집숍 <strong>코아시스</strong>까지 운영하고 있습니다. 이 경험을 유튜브 쇼핑으로 확장합니다. 경쟁력 있는 가격의 명품 직매입 상품, Hmall에서 만날 수 있는 현대백화점 상품, 그리고 자체 브랜드까지 갖추고 있습니다. 상품이 많다는 이야기보다, <strong>여러분이 자신 있게 소개할 만한 상품을 먼저 골라 보여드리겠다</strong>는 약속을 드리겠습니다.</p>
+            </div>
+          </div>
+          <div class="director-note"><span class="label">구글 제작 메모</span><p>명품과 현대백화점 상품을 주축으로, PB는 세 번째 보조 타일로 배치합니다. 매입액·상품 수·매출 순위는 확인 전이므로 넣지 않습니다.</p></div>
+          <div class="fact-note">PLUS#와 상세 PB 설명은 제작진의 회사 이해를 위한 배경정보로만 활용하고 실제 발화에서는 생략합니다.</div>
+        </article>
+
+        <article class="slide-card">
+          <div class="slide-top">
+            <div class="slide-index">SLIDE 03 · OFFER</div>
+            <h3 class="slide-title">9월 1일 상품 공개, 9월 7일 태그 시작.</h3>
+            <div class="slide-time">01:25–02:30</div>
+          </div>
+          <div class="slide-body">
+            <div class="screen-copy">
+              <span class="label">화면 핵심 문구</span>
+              <h4>쇼핑스타 전용 핫딜에서<br>내 채널의 히트 상품을 찾으세요.</h4>
+              <div class="visual-chips"><span class="visual-chip">9.1 상품 공개</span><span class="visual-chip">9.7 시작</span><span class="visual-chip">20% → 10%+</span><span class="visual-chip">일부 상품 제외</span></div>
+              <p>실제 핫딜 페이지 화면을 중심으로 ‘상품 공개 → 태그 시작 → 수수료’ 흐름을 한 줄로 보여줍니다.</p>
+            </div>
+            <div class="speech">
+              <span class="label">이경우 상무 발화</span>
+              <p>상품이 많다고 태그할 상품이 많은 것은 아닙니다. <strong>9월 1일, 쇼핑스타 전용 핫딜 페이지</strong>를 공개하겠습니다. 현대홈쇼핑 MD가 콘텐츠로 소개하기 좋고 가격 혜택이 분명한 상품을 먼저 골라 보여드리겠습니다. 상품 구성과 상품 수도 이날 함께 공개합니다. 그리고 9월 7일부터 한 달간 수수료 20%, 이후에도 최소 10%를 운영합니다. 일부 상품은 제외됩니다. 상품과 시즌에 맞춘 추가 수수료 프로모션도 자주 진행하겠습니다. 여러분은 상품을 찾는 시간보다, <strong>그 상품을 어떻게 이야기할지</strong>에 더 많은 시간을 써주십시오.</p>
+            </div>
+          </div>
+          <div class="director-note"><span class="label">구글 제작 메모</span><p>핫딜 페이지 실제 화면은 구글을 통해 전달 예정입니다. 상품 수는 9월 1일 공개 전까지 빈칸 또는 ‘공개 예정’으로 두고 임의 숫자를 만들지 않습니다.</p></div>
+        </article>
+
+        <article class="slide-card">
+          <div class="slide-top">
+            <div class="slide-index">SLIDE 04 · TRUST</div>
+            <h3 class="slide-title">추천 전에는 선별하고, 추천 뒤에는 책임집니다.</h3>
+            <div class="slide-time">02:30–03:45</div>
+          </div>
+          <div class="slide-body">
+            <div class="screen-copy">
+              <span class="label">화면 핵심 문구</span>
+              <h4>상품 선별부터<br>배송·교환·환불·CS까지.</h4>
+              <div class="visual-chips"><span class="visual-chip">품질연구소·상품 QA</span><span class="visual-chip">NCSI 5년 연속 1위</span><span class="visual-chip">KCSI 2개 부문 1위</span></div>
+              <p>‘판매 전’과 ‘판매 후’를 양쪽에 놓고 현대홈쇼핑이 모두 책임지는 구조로 표현합니다.</p>
+            </div>
+            <div class="speech">
+              <span class="label">이경우 상무 발화</span>
+              <p>상품 하나를 태그하는 일은 링크 하나를 거는 일이 아닙니다. 여러분의 이름과 팬의 신뢰를 함께 거는 일입니다. 그래서 판매 전에는 품질연구소와 상품 QA, 입점 절차를 통해 상품을 선별하고, 판매 후에는 <strong>배송, 교환·환불, 고객 응대</strong>를 현대홈쇼핑이 맡겠습니다. 현대홈쇼핑은 2026 NCSI TV홈쇼핑 부문 5년 연속 1위이며, 2025 KCSI에서는 TV홈쇼핑과 인터넷쇼핑몰 부문 모두 1위를 기록했습니다. 이 평가는 고객의 구매 경험을 꾸준히 관리해 왔다는 외부의 확인입니다. 여러분의 추천과 신뢰도 그 운영으로 지키겠습니다. 여러분은 판매 이후의 CS보다 콘텐츠와 구독자에게 집중해 주십시오.</p>
+            </div>
+          </div>
+          <div class="director-note"><span class="label">구글 제작 메모</span><p>NCSI·KCSI는 인증 배지 크기의 보조 근거로만 사용합니다. 주인공은 ‘선별 → 배송·교환·환불·CS’라는 책임의 범위입니다.</p></div>
+          <div class="fact-note">KCSI 표기는 ‘TV홈쇼핑 3년 연속·인터넷쇼핑몰 6년 연속 1위’ 또는 ‘두 부문 1위’ 중 화면 공간에 맞춰 선택할 수 있습니다.</div>
+        </article>
+
+        <article class="slide-card">
+          <div class="slide-top">
+            <div class="slide-index">SLIDE 05 · SUPPORT & CTA</div>
+            <h3 class="slide-title">여러분은 팬과 콘텐츠에 집중해 주세요. 그 뒤는 저희가 맡겠습니다.</h3>
+            <div class="slide-time">03:45–05:10</div>
+          </div>
+          <div class="slide-body">
+            <div class="screen-copy">
+              <span class="label">화면 핵심 문구</span>
+              <h4>시작은 쉽게.<br>운영은 사람답게.</h4>
+              <div class="visual-chips"><span class="visual-chip">온보딩 문서</span><span class="visual-chip">전담 카카오채널</span><span class="visual-chip">Hmall 50,000P</span><span class="visual-chip">선착순 50명 코아시스 세트</span></div>
+              <p>QR은 이 장에서만 보여줍니다. ‘채널 등록 → 확인 → 코아시스 세트 수령’ 순서를 화면으로 명확히 표시합니다.</p>
+            </div>
+            <div class="speech">
+              <span class="label">이경우 상무 발화</span>
+              <p>운영을 시작하면 가장 답답한 순간은 답을 줄 사람이 없을 때입니다. 가입부터 정산까지 한눈에 보는 온보딩 문서를 드리고, 쇼핑스타 전용 카카오채널에는 <strong>전담 담당자</strong>를 두겠습니다. 상품, 프로모션, 태그, 정산까지 무엇이든 물어보세요. 사람이 직접 답하겠습니다.</p>
+              <p>오늘 모든 쇼핑스타분께 드리는 <strong>Hmall 적립금 5만원</strong>은 9월 안에 직접 상품을 사고, 받아보고, 사용해 보시는 데 활용해 주십시오. 내 팬에게 소개할 만한 상품인지 먼저 고객의 눈으로 판단해 보시길 바랍니다. 지금 화면의 카카오채널을 등록하신 선착순 50분께는 현장에서 코아시스 화장품세트도 드립니다.</p>
+              <p><strong>9월 1일 상품 공개, 9월 7일 시작, 첫 한 달 20%.</strong> 크리에이터가 유통사를 선택하는 시대입니다. 저희를 믿어 달라는 말 대신, 상품과 조건과 운영으로 보여드리겠습니다. 현대홈쇼핑을 첫 태그로 확인해 주십시오. 여러분은 팬과 콘텐츠에 집중해 주세요. <strong>그 뒤는 저희가 맡겠습니다.</strong> 감사합니다.</p>
+            </div>
+          </div>
+          <div class="director-note"><span class="label">구글 제작 메모</span><p>선물 설명 뒤 화면을 정리하고, 마지막 15초에는 ‘그 뒤는 저희가 맡겠습니다’만 남깁니다. QA 부스 약도나 위치 안내는 넣지 않습니다.</p></div>
+          <div class="fact-note">적립금은 9월 내 사용. 코아시스 세트는 카카오채널 등록 확인 기준 선착순 50명 현장 수령. 응원 카드는 적립금과 함께 제공.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="brief">
+      <div class="section-head">
+        <div class="section-no">03 · GOOGLE PRODUCTION BRIEF</div>
+        <div>
+          <h2>구글 담당자에게 전달할 서술형 설명</h2>
+          <p class="section-intro">아래 내용은 발표자가 모두 읽는 원고가 아니라, PPT를 대신 제작하는 담당자가 회사와 발표 의도를 충분히 이해하도록 제공하는 배경자료입니다.</p>
+        </div>
+      </div>
+      <div class="brief-grid">
+        <div class="brief-index">
+          <div class="brief-chip"><b>COMPANY</b><strong>새로운 파트너의 등장</strong></div>
+          <div class="brief-chip"><b>PRODUCT</b><strong>팔 만한 상품의 근거</strong></div>
+          <div class="brief-chip"><b>TRUST</b><strong>추천 전후의 책임</strong></div>
+          <div class="brief-chip"><b>SUPPORT</b><strong>쉽게 시작할 운영 도구</strong></div>
+          <div class="brief-chip"><b>TONE</b><strong>조건보다 파트너십</strong></div>
+        </div>
+        <article class="brief-copy">
+          <h3>PPT 제작 배경 및 의도</h3>
+          <h4>1. 회사와 사업에 대한 이해</h4>
+          <p>현대홈쇼핑은 현대백화점그룹에 속한 유통기업으로 TV홈쇼핑을 주요 사업으로 운영해 왔습니다. 온라인 종합몰 Hmall과 모바일 라이브 커머스 ‘쇼라’를 함께 운영하며, 최근에는 TV홈쇼핑의 뷰티 상품을 오프라인에서 경험할 수 있는 뷰티 편집숍 ‘코아시스’도 선보였습니다. 현대아울렛에서는 TV홈쇼핑 상품을 체험할 수 있는 PLUS# 매장을 운영하고 있습니다.</p>
+          <p>자체 PB로 알레보, 라씨엔토, 머티리얼랩 등을 운영해 왔고, 일부 브랜드는 크리에이터와 직접 협업한 경험도 있습니다. 이번 발표에서는 이 모든 사업을 나열하기보다, 다양한 유통 접점과 상품 운영 경험을 유튜브 쇼핑으로 확장하는 ‘새로운 파트너의 등장’이라는 맥락만 짧게 전달합니다.</p>
+
+          <h4>2. 상품 경쟁력의 표현</h4>
+          <p>현대홈쇼핑의 상품력은 명품 직매입 상품, Hmall에서 판매하는 현대백화점 연계 상품, 자체 PB 브랜드라는 세 축으로 설명할 수 있습니다. 다만 발표에서는 명품과 현대백화점 상품을 직접 말하고 PB는 화면 보조요소로 사용합니다. 상품 수나 매입액 같은 숫자는 내부 확정 전까지 기재하지 않습니다.</p>
+          <p>이 슬라이드의 목적은 ‘우리가 상품이 많다’는 자랑이 아닙니다. 크리에이터가 콘텐츠로 소개할 만한 상품을 현대홈쇼핑의 MD가 먼저 선별해 전용 핫딜 페이지로 제공한다는 약속을 설득하는 것입니다.</p>
+
+          <h4>3. 신뢰와 고객 경험</h4>
+          <p>크리에이터가 상품을 태그하면 상품에 문제가 생겼을 때 팬은 판매자보다 크리에이터에게 먼저 질문할 수 있습니다. 구매 뒤의 불편이 크리에이터에 대한 신뢰에도 영향을 줄 수 있기 때문입니다. 현대홈쇼핑은 판매 전 품질연구소·상품 QA·입점 절차를 통한 선별과 판매 후 배송·교환·환불·고객 응대를 하나의 책임으로 설명하려 합니다.</p>
+          <p>NCSI와 KCSI는 이 운영력을 뒷받침하는 외부 근거입니다. 인증 로고나 연속 연수를 과도하게 강조하기보다, 고객 구매 경험을 지속적으로 관리해 온 결과라는 정도로 사용합니다.</p>
+
+          <h4>4. 크리에이터 지원</h4>
+          <p>9월 1일 공개 예정인 쇼핑스타 전용 핫딜 페이지는 상품 탐색 시간을 줄이는 도구입니다. 온보딩 문서는 가입부터 정산까지의 흐름을 설명하고, 전담 카카오채널은 상품·프로모션·태그·정산과 관련된 질문에 담당자가 직접 답하는 창구입니다. 안내 사이트 하나를 발표의 핵심 메시지로 삼기보다 세 가지 지원 수단이 연결된 구조로 보여주길 요청합니다.</p>
+
+          <h4>5. 전체 톤</h4>
+          <p>경쟁사보다 상품이 많거나 규모가 크다고 주장하는 발표가 아닙니다. 20%라는 강한 조건으로 관심을 얻되, 마지막에는 ‘추천 이후까지 책임지는 파트너’라는 메시지가 남아야 합니다. 상무님의 발화는 담백하고 확정적으로 들려야 하며, ‘응원하겠습니다’보다 ‘준비하겠습니다’, ‘맡겠습니다’, ‘보여드리겠습니다’와 같은 책임의 언어를 사용합니다.</p>
+          <div class="emphasis">최종 화면에 남길 문장: “여러분은 팬과 콘텐츠에 집중해 주세요. 그 뒤는 저희가 맡겠습니다.”</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="script">
+      <div class="section-head">
+        <div class="section-no">04 · FULL SCRIPT</div>
+        <div>
+          <h2>발표자용 전체 원고</h2>
+          <p class="section-intro">슬라이드 전환과 강조 호흡을 포함해 약 5분 10초를 목표로 합니다. 현장 반응이 있어도 최대 6분을 넘기지 않는 분량입니다.</p>
+        </div>
+      </div>
+      <div class="full-script">
+        <div class="script-meta"><span>발표자 · 영업전략담당 이경우 상무</span><span>목표 · 05:10 / 최대 · 06:00</span></div>
+        <div class="script-text" id="scriptText">
+          <p><span class="beat">00:00</span>안녕하세요. 현대홈쇼핑 영업전략담당 이경우입니다. 오늘 가장 먼저 드릴 숫자는 <strong>20%</strong>입니다. 9월 7일부터 한 달간, 오늘 이 자리에 계신 모든 쇼핑스타분이 참여하실 수 있습니다. 그런데 수수료가 높다고 아무 상품이나 태그하시지는 않겠죠. 상품을 태그하는 순간 여러분의 이름과 팬의 신뢰도 함께 걸리기 때문입니다. 그래서 현대홈쇼핑은 수수료만 말씀드리지 않겠습니다. <strong>팔 만한 상품과 추천 이후의 고객 경험까지</strong> 함께 준비하겠습니다.</p>
+          <p><span class="beat">00:40</span>현대홈쇼핑은 현대백화점그룹의 유통사로, TV홈쇼핑과 온라인 Hmall, 모바일 라이브 <strong>쇼라</strong>, 오프라인 뷰티 편집숍 <strong>코아시스</strong>까지 운영하고 있습니다. 이 경험을 유튜브 쇼핑으로 확장합니다. 경쟁력 있는 가격의 명품 직매입 상품, Hmall에서 만날 수 있는 현대백화점 상품, 그리고 자체 브랜드까지 갖추고 있습니다. 상품이 많다는 이야기보다, <strong>여러분이 자신 있게 소개할 만한 상품을 먼저 골라 보여드리겠다</strong>는 약속을 드리겠습니다.</p>
+          <p><span class="beat">01:25</span>상품이 많다고 태그할 상품이 많은 것은 아닙니다. <strong>9월 1일, 쇼핑스타 전용 핫딜 페이지</strong>를 공개하겠습니다. 현대홈쇼핑 MD가 콘텐츠로 소개하기 좋고 가격 혜택이 분명한 상품을 먼저 골라 보여드리겠습니다. 상품 구성과 상품 수도 이날 함께 공개합니다. 그리고 9월 7일부터 한 달간 수수료 20%, 이후에도 최소 10%를 운영합니다. 일부 상품은 제외됩니다. 상품과 시즌에 맞춘 추가 수수료 프로모션도 자주 진행하겠습니다. 여러분은 상품을 찾는 시간보다, <strong>그 상품을 어떻게 이야기할지</strong>에 더 많은 시간을 써주십시오.</p>
+          <p><span class="beat">02:30</span>상품 하나를 태그하는 일은 링크 하나를 거는 일이 아닙니다. 여러분의 이름과 팬의 신뢰를 함께 거는 일입니다. 그래서 판매 전에는 품질연구소와 상품 QA, 입점 절차를 통해 상품을 선별하고, 판매 후에는 <strong>배송, 교환·환불, 고객 응대</strong>를 현대홈쇼핑이 맡겠습니다. 현대홈쇼핑은 2026 NCSI TV홈쇼핑 부문 5년 연속 1위이며, 2025 KCSI에서는 TV홈쇼핑과 인터넷쇼핑몰 부문 모두 1위를 기록했습니다. 이 평가는 고객의 구매 경험을 꾸준히 관리해 왔다는 외부의 확인입니다. 여러분의 추천과 신뢰도 그 운영으로 지키겠습니다. 여러분은 판매 이후의 CS보다 콘텐츠와 구독자에게 집중해 주십시오.</p>
+          <p><span class="beat">03:45</span>운영을 시작하면 가장 답답한 순간은 답을 줄 사람이 없을 때입니다. 가입부터 정산까지 한눈에 보는 온보딩 문서를 드리고, 쇼핑스타 전용 카카오채널에는 <strong>전담 담당자</strong>를 두겠습니다. 상품, 프로모션, 태그, 정산까지 무엇이든 물어보세요. 사람이 직접 답하겠습니다.</p>
+          <p>오늘 모든 쇼핑스타분께 드리는 <strong>Hmall 적립금 5만원</strong>은 9월 안에 직접 상품을 사고, 받아보고, 사용해 보시는 데 활용해 주십시오. 내 팬에게 소개할 만한 상품인지 먼저 고객의 눈으로 판단해 보시길 바랍니다. 지금 화면의 카카오채널을 등록하신 선착순 50분께는 현장에서 코아시스 화장품세트도 드립니다.</p>
+          <p><strong>9월 1일 상품 공개, 9월 7일 시작, 첫 한 달 20%.</strong> 크리에이터가 유통사를 선택하는 시대입니다. 저희를 믿어 달라는 말 대신, 상품과 조건과 운영으로 보여드리겠습니다. 현대홈쇼핑을 첫 태그로 확인해 주십시오. 여러분은 팬과 콘텐츠에 집중해 주세요. <strong>그 뒤는 저희가 맡겠습니다.</strong> 감사합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="checks">
+      <div class="section-head">
+        <div class="section-no">05 · FINAL CHECKS</div>
+        <div>
+          <h2>구글 전달 전 최종 확인사항</h2>
+        </div>
+      </div>
+      <div class="check-grid">
+        <article class="check-card"><b>VISUAL ASSETS</b><h3>실제 화면·이미지</h3><ul><li>9월 1일 공개 예정 핫딜 페이지 실제 화면</li><li>명품·현대백화점 상품·PB 대표 이미지</li><li>코아시스 화장품세트 실물 이미지</li><li>카카오채널 QR 및 현장 접속 테스트</li></ul></article>
+        <article class="check-card"><b>FACTS</b><h3>화면 표기</h3><ul><li>20% 및 최소 10%에 ‘일부 상품 제외’ 각주</li><li>상품 수는 확정 전 임의 기재 금지</li><li>NCSI·KCSI 명칭·연도·연속 연수 재확인</li><li>서비스명은 ‘쇼라’로 통일</li></ul></article>
+        <article class="check-card"><b>ON-SITE FLOW</b><h3>현장 혜택</h3><ul><li>모든 쇼핑스타에게 응원 카드와 5만원 적립금</li><li>적립금은 9월 내 사용 가능</li><li>선착순 → 카카오채널 등록 확인 → 세트 수령</li><li>QA 부스 위치·약도는 PPT에 별도 작성하지 않음</li></ul></article>
+        <article class="check-card"><b>OUT OF SCOPE</b><h3>이번 V1에서 제외</h3><ul><li>라이브 방송 공동기획 약속</li><li>크리에이터별 예외 수수료</li><li>미확정 안내 사이트 도메인</li><li>명품 매입액·상품 수·매출 순위 등 미확정 숫자</li></ul></article>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="section-head">
+        <div class="section-no">06 · REFERENCES</div>
+        <div>
+          <h2>제작 참고 근거</h2>
+          <p class="section-intro">만족도 지표를 배송·교환·환불 각각의 단독 평가 결과처럼 확대 해석하지 않고, 고객 경험 운영에 대한 외부 평가로만 사용합니다.</p>
+        </div>
+      </div>
+      <div class="sources">
+        <a class="source-card" href="https://company.hyundaihmall.com/" target="_blank" rel="noreferrer"><b>OFFICIAL</b><strong>현대홈쇼핑 회사·사업 소개</strong><span>TV홈쇼핑 · Hmall · 쇼라 · 코아시스 · PLUS#</span></a>
+        <a class="source-card" href="https://www.yna.co.kr/amp/view/AKR20260709053700030" target="_blank" rel="noreferrer"><b>NCSI 2026</b><strong>TV홈쇼핑 부문 5년 연속 1위</strong><span>상품 품질 개선·물류 경쟁력 강화 언급</span></a>
+        <a class="source-card" href="https://www.hankyung.com/article/202509306454P" target="_blank" rel="noreferrer"><b>KCSI 2025</b><strong>TV홈쇼핑·인터넷쇼핑몰 부문 1위</strong><span>고객 서비스·물류 혁신 분야 평가</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>현대홈쇼핑 × 유튜브 쇼핑 제휴프로그램 · 최종 통합본 V1</span>
+      <span>발표자 · 영업전략담당 이경우 상무</span>
+    </div>
+  </footer>
+
+  <script>
+    const speakerButton = document.getElementById('speakerMode');
+    speakerButton.addEventListener('click', () => {
+      const active = document.body.classList.toggle('speaker-mode');
+      speakerButton.textContent = active ? '검토 화면으로' : '발표자 모드';
+      if (active) window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && document.body.classList.contains('speaker-mode')) {
+        document.body.classList.remove('speaker-mode');
+        speakerButton.textContent = '발표자 모드';
+      }
+    });
+  </script>
+</body>
+</html>
