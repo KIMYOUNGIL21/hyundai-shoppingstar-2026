@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="유튜브 쇼핑 스타 행사 현대홈쇼핑 최종 발표 큐시트" />
+  <title>현대홈쇼핑 × YouTube Shopping — 최종 발표 큐시트</title>
+  <style>
+    @font-face {
+      font-family: "Pretendard";
+      src: url("_PretendardVariable.woff2") format("woff2");
+      font-weight: 100 900;
+      font-display: swap;
+    }
+
+    :root {
+      --paper: #f5f2ec;
+      --surface: #fffdfa;
+      --ink: #17171a;
+      --muted: #6d6a68;
+      --line: #ded9d0;
+      --wine: #8f1537;
+      --wine-deep: #581127;
+      --wine-soft: #f4e7eb;
+      --gold: #c9a35b;
+      --green: #176e53;
+      --green-soft: #e6f2ed;
+      --amber: #a8650a;
+      --amber-soft: #fff1d8;
+      --shadow: 0 18px 52px rgba(33, 25, 22, 0.08);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 82% 4%, rgba(143, 21, 55, 0.10), transparent 26rem),
+        linear-gradient(180deg, #f8f5f0 0%, var(--paper) 44%, #eeeae3 100%);
+      font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+      line-height: 1.65;
+      letter-spacing: -0.018em;
+    }
+
+    button, a { font: inherit; }
+    a { color: inherit; }
+    .page { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(222, 217, 208, 0.78);
+      background: rgba(248, 245, 240, 0.88);
+      backdrop-filter: blur(18px);
+    }
+    .topbar-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: var(--wine);
+      font-size: 13px;
+      box-shadow: 0 7px 18px rgba(143, 21, 55, 0.22);
+    }
+    .nav { display: flex; align-items: center; gap: 7px; }
+    .nav a {
+      padding: 8px 11px;
+      border-radius: 999px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .nav a:hover, .nav a:focus-visible { color: var(--wine); background: var(--wine-soft); outline: none; }
+    .actions { display: flex; gap: 8px; }
+    .btn {
+      min-height: 38px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--ink);
+      background: rgba(255,255,255,.76);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .18s ease;
+    }
+    .btn:hover, .btn:focus-visible { transform: translateY(-1px); border-color: #bdb6ac; outline: none; }
+    .btn.primary { color: #fff; border-color: var(--wine); background: var(--wine); }
+
+    .hero { padding: 72px 0 36px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      color: var(--wine);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--wine); }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr); gap: 52px; align-items: end; }
+    h1 {
+      max-width: 830px;
+      margin: 0;
+      font-size: clamp(45px, 6.2vw, 82px);
+      line-height: .99;
+      letter-spacing: -0.072em;
+      font-weight: 900;
+    }
+    h1 em { color: var(--wine); font-style: normal; }
+    .hero-copy {
+      max-width: 730px;
+      margin: 25px 0 0;
+      color: #4e4a48;
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.58;
+      font-weight: 520;
+    }
+    .status-card {
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--wine-deep);
+      box-shadow: var(--shadow);
+    }
+    .status-head { padding: 17px 20px; border-bottom: 1px solid rgba(255,255,255,.12); color: #e7cbd4; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+    .clock { padding: 23px 22px 15px; font-size: 62px; line-height: 1; font-weight: 850; letter-spacing: -0.06em; font-variant-numeric: tabular-nums; }
+    .clock-label { padding: 0 22px 22px; color: #e9d7dc; font-size: 14px; }
+    .status-meta { display: grid; grid-template-columns: repeat(3, 1fr); background: rgba(0,0,0,.14); }
+    .status-meta div { padding: 15px 12px; border-right: 1px solid rgba(255,255,255,.1); text-align: center; }
+    .status-meta div:last-child { border-right: 0; }
+    .status-meta b { display: block; font-size: 18px; }
+    .status-meta span { color: #d7bcc5; font-size: 11px; }
+
+    .summary-strip {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 1px;
+      overflow: hidden;
+      margin: 26px 0 72px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--line);
+      box-shadow: 0 12px 34px rgba(33,25,22,.04);
+    }
+    .summary-strip article { padding: 24px; background: rgba(255,253,250,.94); }
+    .mini-label { margin-bottom: 9px; color: var(--muted); font-size: 11px; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+    .summary-strip strong { display: block; font-size: 20px; line-height: 1.34; letter-spacing: -.035em; }
+    .summary-strip p { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+
+    section { scroll-margin-top: 92px; }
+    .section-head { display: grid; grid-template-columns: 220px 1fr; gap: 28px; margin: 0 0 28px; align-items: start; }
+    .section-kicker { color: var(--wine); font-size: 12px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+    h2 { margin: 0; font-size: clamp(30px, 4.1vw, 52px); line-height: 1.12; letter-spacing: -.055em; }
+    .section-lead { max-width: 760px; margin: 13px 0 0; color: var(--muted); font-size: 16px; }
+
+    .strategy { margin-bottom: 84px; }
+    .strategy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card { border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,253,250,.86); box-shadow: 0 15px 44px rgba(33,25,22,.045); }
+    .message-card { grid-column: 1 / -1; padding: 34px; background: var(--ink); color: #fff; border-color: var(--ink); }
+    .message-card blockquote { max-width: 930px; margin: 0; font-size: clamp(28px, 4vw, 47px); line-height: 1.22; letter-spacing: -.052em; font-weight: 790; }
+    .message-card blockquote em { color: #efb9c9; font-style: normal; }
+    .message-card .note { margin-top: 20px; color: #bdb9b6; font-size: 14px; }
+    .audience-card, .goal-card { padding: 27px; }
+    .card h3 { margin: 0 0 17px; font-size: 22px; line-height: 1.25; letter-spacing: -.035em; }
+    .question-list { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; counter-reset: q; }
+    .question-list li { display: grid; grid-template-columns: 32px 1fr; gap: 11px; align-items: start; color: #4f4b48; font-size: 15px; }
+    .question-list li::before { counter-increment: q; content: counter(q); width: 28px; height: 28px; display: grid; place-items: center; border-radius: 9px; color: var(--wine); background: var(--wine-soft); font-size: 12px; font-weight: 900; }
+    .goal-line { display: flex; gap: 13px; align-items: flex-start; margin-top: 13px; padding-top: 13px; border-top: 1px solid var(--line); }
+    .goal-line:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
+    .goal-line b { flex: 0 0 48px; color: var(--wine); font-size: 13px; }
+    .goal-line span { color: #4f4b48; font-size: 15px; }
+
+    .cue-section { margin-bottom: 86px; }
+    .timeline { position: relative; display: grid; gap: 18px; }
+    .cue-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      background: var(--surface);
+      box-shadow: 0 14px 42px rgba(33,25,22,.045);
+    }
+    .cue-time { padding: 27px 23px; color: #fff; background: var(--wine-deep); }
+    .cue-time .slide-no { color: #d9b5c0; font-size: 11px; font-weight: 850; letter-spacing: .11em; }
+    .cue-time time { display: block; margin: 9px 0 1px; font-size: 22px; line-height: 1.2; font-weight: 830; font-variant-numeric: tabular-nums; }
+    .cue-time small { color: #d9bfc7; font-size: 12px; }
+    .cue-main { padding: 27px 30px 29px; }
+    .cue-title-row { display: flex; justify-content: space-between; gap: 18px; align-items: start; }
+    .cue-main h3 { margin: 0; font-size: clamp(23px, 3vw, 31px); line-height: 1.2; letter-spacing: -.045em; }
+    .intent { flex: 0 0 auto; padding: 7px 10px; border-radius: 999px; color: var(--green); background: var(--green-soft); font-size: 11px; font-weight: 850; }
+    .screen-copy { margin: 17px 0 0; padding: 17px 19px; border-left: 4px solid var(--wine); border-radius: 0 13px 13px 0; background: var(--wine-soft); }
+    .screen-copy .mini-label { color: var(--wine); margin-bottom: 4px; }
+    .screen-copy strong { font-size: 19px; line-height: 1.4; }
+    details { margin-top: 18px; border-top: 1px solid var(--line); }
+    summary { padding: 17px 0 2px; color: var(--wine); cursor: pointer; font-size: 13px; font-weight: 850; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; float: right; color: var(--muted); font-size: 17px; }
+    details[open] summary::after { content: "−"; }
+    .speech { margin: 11px 0 0; color: #33302e; font-size: 16px; line-height: 1.88; }
+    .speech mark { padding: 1px 3px; color: inherit; background: #fff0ac; }
+    .director-note { display: grid; grid-template-columns: 110px 1fr; gap: 15px; margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line); color: var(--muted); font-size: 13px; }
+    .director-note b { color: var(--ink); }
+    .three-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 13px; }
+    .pillar { padding: 15px; border: 1px solid #eadde1; border-radius: 14px; background: #fff; }
+    .pillar b { display: block; color: var(--wine); font-size: 14px; }
+    .pillar span { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; }
+    .offer-rail { display: grid; grid-template-columns: 1fr 54px 1fr; gap: 10px; align-items: stretch; margin-top: 14px; }
+    .offer-step { padding: 17px; border: 1px solid #eadde1; border-radius: 15px; background: #fff; }
+    .offer-step b { display: block; color: var(--wine); font-size: 27px; line-height: 1; letter-spacing: -.05em; }
+    .offer-step span { display: block; margin-top: 7px; color: var(--muted); font-size: 12px; }
+    .offer-arrow { display: grid; place-items: center; color: var(--wine); font-size: 23px; font-weight: 900; }
+    .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .proof-stat { padding: 17px; border: 1px solid #d8e8e1; border-radius: 15px; background: #f3faf7; }
+    .proof-stat b { display: block; color: var(--green); font-size: 20px; line-height: 1.25; letter-spacing: -.035em; }
+    .proof-stat span { display: block; margin-top: 6px; color: #567066; font-size: 11px; }
+    .source-inline { margin-top: 10px; color: var(--muted); font-size: 10.5px; }
+    .source-inline a { color: var(--wine); font-weight: 750; }
+
+    .full-script { margin-bottom: 86px; }
+    .script-panel { padding: clamp(25px, 5vw, 54px); border-radius: 28px; color: #f8f6f3; background: #17171a; box-shadow: var(--shadow); }
+    .script-toolbar { display: flex; justify-content: space-between; gap: 18px; align-items: center; margin-bottom: 28px; padding-bottom: 22px; border-bottom: 1px solid rgba(255,255,255,.13); }
+    .script-toolbar b { font-size: 18px; }
+    .script-toolbar span { color: #aaa5a2; font-size: 13px; }
+    .script-body p { margin: 0 0 23px; color: #e8e4e1; font-size: clamp(17px, 2.1vw, 20px); line-height: 1.92; }
+    .script-body p:last-child { margin-bottom: 0; }
+    .script-body .beat { display: inline-block; margin-right: 8px; color: #e4aabe; font-size: 12px; font-weight: 850; vertical-align: .15em; }
+    .script-body strong { color: #fff; }
+    .script-body .placeholder { padding: 2px 5px; border-radius: 5px; color: #ffd48c; background: rgba(255,190,83,.12); }
+
+    .checks { margin-bottom: 90px; }
+    .checks-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
+    .check-card { padding: 27px; }
+    .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 17px; }
+    .check-item { display: flex; gap: 10px; padding: 13px; border: 1px solid #ead5b4; border-radius: 13px; background: var(--amber-soft); color: #68440f; font-size: 13px; }
+    .check-item::before { content: "!"; flex: 0 0 21px; height: 21px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--amber); font-size: 11px; font-weight: 900; }
+    .guardrail { margin: 0; padding-left: 19px; color: #4f4b48; font-size: 14px; }
+    .guardrail li { margin: 0 0 10px; }
+    .source-note { margin-top: 18px; padding-top: 17px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .source-note a { color: var(--wine); font-weight: 750; }
+
+    footer { padding: 29px 0 46px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .draft-badge { color: var(--wine); font-weight: 850; }
+
+    .toast { position: fixed; left: 50%; bottom: 28px; z-index: 50; transform: translate(-50%, 20px); padding: 11px 16px; border-radius: 11px; color: #fff; background: #17171a; opacity: 0; pointer-events: none; transition: .2s ease; font-size: 13px; }
+    .toast.show { transform: translate(-50%, 0); opacity: 1; }
+
+    .speaker-mode .topbar, .speaker-mode .hero, .speaker-mode .summary-strip, .speaker-mode .strategy,
+    .speaker-mode .cue-section, .speaker-mode .checks, .speaker-mode footer { display: none; }
+    .speaker-mode .full-script { margin: 0; min-height: 100vh; padding: 40px 0; background: #0f0f11; }
+    .speaker-mode .script-panel { min-height: calc(100vh - 80px); box-shadow: none; }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .hero-grid, .section-head, .checks-grid { grid-template-columns: 1fr; }
+      .status-card { max-width: 430px; }
+      .summary-strip { grid-template-columns: 1fr; }
+      .strategy-grid { grid-template-columns: 1fr; }
+      .message-card { grid-column: auto; }
+      .section-head { gap: 8px; }
+      .cue-card { grid-template-columns: 1fr; }
+      .cue-time { display: flex; gap: 12px; align-items: center; padding: 14px 20px; }
+      .cue-time time { margin: 0; font-size: 17px; }
+      .cue-time small { margin-left: auto; }
+    }
+
+    @media (max-width: 620px) {
+      .page { width: min(100% - 24px, 1160px); }
+      .topbar-inner { min-height: 58px; }
+      .brand span:last-child, .actions .print-btn { display: none; }
+      .hero { padding-top: 48px; }
+      h1 { font-size: 46px; }
+      .summary-strip { margin-bottom: 58px; }
+      .three-pillars, .check-list, .proof-grid { grid-template-columns: 1fr; }
+      .offer-rail { grid-template-columns: 1fr; }
+      .offer-arrow { transform: rotate(90deg); }
+      .cue-main { padding: 23px 20px 25px; }
+      .cue-title-row { display: block; }
+      .intent { display: inline-block; margin-top: 11px; }
+      .director-note { grid-template-columns: 1fr; gap: 5px; }
+      .script-toolbar { align-items: flex-start; flex-direction: column; }
+      .footer-inner { flex-direction: column; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 14mm; }
+      body { background: #fff; }
+      .topbar, .actions, .toast { display: none !important; }
+      .page { width: 100%; }
+      .hero { padding: 18px 0 20px; }
+      h1 { font-size: 43px; }
+      .hero-grid { grid-template-columns: 1fr 230px; gap: 24px; }
+      .summary-strip { margin: 14px 0 34px; }
+      .strategy, .cue-section, .full-script, .checks { margin-bottom: 36px; }
+      .cue-card, .card, .script-panel { break-inside: avoid; box-shadow: none; }
+      details { display: block; }
+      details > * { display: block; }
+      summary::after { display: none; }
+      .script-body p { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="page topbar-inner">
+      <div class="brand"><span class="brand-mark">H</span><span>현대홈쇼핑 × YouTube Shopping</span></div>
+      <nav class="nav" aria-label="페이지 목차">
+        <a href="#strategy">발표 전략</a>
+        <a href="#cue">슬라이드 큐시트</a>
+        <a href="#script">통합 원고</a>
+        <a href="#checks">확인사항</a>
+      </nav>
+      <div class="actions">
+        <button class="btn print-btn" type="button" onclick="window.print()">인쇄 / PDF</button>
+        <button class="btn primary" type="button" id="speakerMode">발표자 모드</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page">
+      <div class="eyebrow">Final Executive Cue Sheet · v1.0</div>
+      <div class="hero-grid">
+        <div>
+          <h1><em>20%로 시작하고,</em><br>추천 이후까지 책임집니다.</h1>
+          <p class="hero-copy">현대홈쇼핑 영업전략담당 이경우 상무 발표용 최종안. 첫 한 달 20%를 입구로, 추천 이후의 고객 경험까지 책임지는 현대홈쇼핑의 운영력을 한 문장으로 남깁니다.</p>
+        </div>
+        <aside class="status-card" aria-label="발표 시간 설계">
+          <div class="status-head">TARGET RUNNING TIME</div>
+          <div class="clock" id="timer">05:00</div>
+          <div class="clock-label">6분 상한 · 현장 변수용 1분 버퍼</div>
+          <div class="status-meta">
+            <div><b>5</b><span>SLIDES</span></div>
+            <div><b>1</b><span>MESSAGE</span></div>
+            <div><b>60″</b><span>BUFFER</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="page summary-strip" aria-label="발표 설계 요약">
+      <article>
+        <div class="mini-label">핵심 메시지</div>
+        <strong>20%는 귀를 여는 숫자</strong>
+        <p>9월 7일부터 첫 한 달 · 전원 참여 가능.</p>
+      </article>
+      <article>
+        <div class="mini-label">청중의 기억</div>
+        <strong>추천 이후까지 책임지는 운영</strong>
+        <p>배송·교환·환불·CS를 현대홈쇼핑이 담당.</p>
+      </article>
+      <article>
+        <div class="mini-label">원하는 행동</div>
+        <strong>9월 1일 상품 공개 · 9월 7일 시작</strong>
+        <p>마지막 QR 등록에서 첫 태그까지 연결.</p>
+      </article>
+    </div>
+
+    <section class="page strategy" id="strategy">
+      <div class="section-head">
+        <div class="section-kicker">01 · Message Strategy</div>
+        <div>
+          <h2>청중의 머릿속 질문부터<br>상무님이 대신 꺼냅니다.</h2>
+          <p class="section-lead">여러 유통사가 연이어 발표하는 자리입니다. 기업이 말하고 싶은 순서보다 크리에이터가 판단하는 순서로 설계했습니다.</p>
+        </div>
+      </div>
+
+      <div class="strategy-grid">
+        <article class="card message-card">
+          <div class="mini-label" style="color:#d9b5c0">ONE MESSAGE TO REMEMBER</div>
+          <blockquote>“현대홈쇼핑은 수수료만 제공하는 제휴사가 아니라,<br><em>여러분의 추천 이후까지 책임지는 파트너가 되겠습니다.</em>”</blockquote>
+          <div class="note">20%는 발표의 입구입니다. 현대홈쇼핑이 무대에서 자신 있게 대표할 이야기는 판매 이후 고객 경험까지 맡는 운영력입니다.</div>
+        </article>
+
+        <article class="card audience-card">
+          <h3>크리에이터가 실제로 묻는 다섯 가지</h3>
+          <ol class="question-list">
+            <li>나도 바로 참여할 수 있는가?</li>
+            <li>수수료는 얼마이고 프로모션은 얼마나 지속되는가?</li>
+            <li>팔기 좋은 상품을 빠르게 찾을 수 있는가?</li>
+            <li>배송·교환·환불·CS를 믿고 맡길 수 있는가?</li>
+            <li>막히는 순간 바로 물어볼 담당자가 있는가?</li>
+          </ol>
+        </article>
+
+        <article class="card goal-card">
+          <h3>발표가 끝난 뒤 남겨야 할 것</h3>
+          <div class="goal-line"><b>기억</b><span>“20%로 시작하고, 판매 뒤의 운영은 현대홈쇼핑이 맡는다.”</span></div>
+          <div class="goal-line"><b>이해</b><span>9월 1일 전용 상품, 9월 7일 시작, 추천 이후까지 이어지는 책임.</span></div>
+          <div class="goal-line"><b>행동</b><span>마지막 장에서 카카오채널을 등록하고, 9월 7일 현대홈쇼핑을 첫 태그로 확인.</span></div>
+          <div class="goal-line"><b>톤</b><span>조건을 자신 있게 밝히고 책임의 범위를 선언하는 경영진의 언어.</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="page cue-section" id="cue">
+      <div class="section-head">
+        <div class="section-kicker">02 · Slide-by-slide Cue</div>
+        <div>
+          <h2>5장, 목표 발화시간 5분 전후.</h2>
+          <p class="section-lead">각 카드의 발화문을 펼치면 상무님 실제 원고가 보입니다. PPT에는 문장을 많이 넣지 않고, 화면은 메시지를 기억시키는 역할만 하도록 요청합니다.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="cue-card">
+          <div class="cue-time"><span class="slide-no">SLIDE 01</span><time>00:00–00:45</time><small>45초</small></div>
+          <div class="cue-main">
+            <div class="cue-title-row">
+              <h3>20%. 그런데 아무 상품이나 태그하시지는 않겠죠.</h3>
+              <span class="intent">놀람 → 공감</span>
+            </div>
+            <div class="screen-copy">
+              <div class="mini-label">화면 핵심 문구</div>
+              <strong>상품을 태그하는 순간, 여러분의 이름과 팬의 신뢰도 함께 걸립니다.</strong>
+            </div>
+            <details open>
+              <summary>상무님 발화문</summary>
+              <p class="speech">안녕하세요. 현대홈쇼핑 영업전략담당 이경우입니다. 오늘 회사 소개는 하지 않겠습니다. <strong>20%.</strong> 오늘 제가 가장 먼저 드릴 숫자입니다. 9월 7일부터 한 달간, 오늘 계신 모든 쇼핑스타분이 참여하실 수 있습니다. 그런데 수수료가 높다고 아무 상품이나 태그하시지는 않겠죠. 상품을 태그하는 순간, 여러분의 이름과 팬의 신뢰도 함께 걸리기 때문입니다. 그래서 현대홈쇼핑은 수수료만 말씀드리지 않겠습니다. <strong>팔 만한 상품과 조건, 그리고 추천 이후의 고객 경험까지</strong> 준비하겠습니다.</p>
+            </details>
+            <div class="director-note"><b>구글 제작 메모</b><span>처음에는 화면 중앙에 ‘20%’만 크게. 상무님이 “그런데”라고 말하는 순간 ‘이름 + 팬의 신뢰’ 문구로 전환. 회사 연혁·일반 소개 없음.</span></div>
+          </div>
+        </article>
+
+        <article class="cue-card">
+          <div class="cue-time"><span class="slide-no">SLIDE 02</span><time>00:45–01:50</time><small>1분 05초</small></div>
+          <div class="cue-main">
+            <div class="cue-title-row">
+              <h3>9월 1일 상품 공개, 9월 7일 태그 시작</h3>
+              <span class="intent">조건·상품 구체화</span>
+            </div>
+            <div class="screen-copy">
+              <div class="mini-label">화면 핵심 문구</div>
+              <strong>쇼핑스타 전용 핫딜에서 내 채널의 히트 상품을 찾으세요.</strong>
+              <div class="offer-rail">
+                <div class="offer-step"><b>20%</b><span>9월 7일부터 첫 한 달</span></div>
+                <div class="offer-arrow">→</div>
+                <div class="offer-step"><b>10%+</b><span>이후 상시 최소 · 일부 상품 제외</span></div>
+              </div>
+            </div>
+            <details open>
+              <summary>상무님 발화문</summary>
+              <p class="speech">상품이 많다고 태그할 상품이 많은 것은 아닙니다. <strong>9월 1일, 쇼핑스타 전용 핫딜 페이지</strong>를 공개하겠습니다. 현대홈쇼핑 MD가 콘텐츠로 소개하기 좋고 가격 혜택이 분명한 상품을 먼저 골라 보여드리겠습니다. 상품 구성과 상품 수도 이날 함께 공개합니다. 그리고 9월 7일부터 한 달간 수수료 20%, 이후에도 최소 10%를 운영합니다. 일부 상품은 제외됩니다. 상품과 시즌에 맞춘 추가 수수료 프로모션도 계속 운영하겠습니다. 첫 한 달 동안 여러 상품과 콘텐츠 조합을 시도해, 내 채널의 히트 상품을 가장 빨리 찾아보세요. 여러분은 상품을 찾는 시간보다, 상품을 어떻게 이야기할지에 더 많은 시간을 쓰시면 됩니다.</p>
+            </details>
+            <div class="director-note"><b>구글 제작 메모</b><span>구글에 전달 예정인 실제 핫딜 페이지 화면을 중심으로 배치. ‘9.1 상품 공개 → 9.7 태그 시작’과 20% → 10%+를 한 줄로. ‘일부 상품 제외’ 각주.</span></div>
+          </div>
+        </article>
+
+        <article class="cue-card">
+          <div class="cue-time"><span class="slide-no">SLIDE 03</span><time>01:50–03:00</time><small>1분 10초</small></div>
+          <div class="cue-main">
+            <div class="cue-title-row">
+              <h3>추천 이후까지, 현대홈쇼핑이 책임지겠습니다</h3>
+              <span class="intent">현대의 선언</span>
+            </div>
+            <div class="screen-copy">
+              <div class="mini-label">화면 핵심 문구</div>
+              <strong>배송 · 교환 · 환불 · 고객 응대는 현대홈쇼핑이 맡습니다.</strong>
+              <div class="proof-grid">
+                <div class="proof-stat"><b>NCSI 5년 연속 1위</b><span>2026 국가고객만족도 · TV홈쇼핑 부문</span></div>
+                <div class="proof-stat"><b>KCSI 6년 연속 1위</b><span>2025 한국산업의 고객만족도 · 인터넷쇼핑몰 부문</span></div>
+              </div>
+              <div class="source-inline">근거: <a href="https://www.yna.co.kr/amp/view/AKR20260709053700030" target="_blank" rel="noreferrer">2026 NCSI 보도</a> · <a href="https://www.hankyung.com/article/202509306454P" target="_blank" rel="noreferrer">2025 KCSI 보도</a></div>
+            </div>
+            <details open>
+              <summary>상무님 발화문</summary>
+              <p class="speech">상품을 추천한 뒤 배송 문의나 교환 요청이 들어오면, 팬은 판매자가 아니라 여러분에게 먼저 묻기도 합니다. 구매 뒤의 불편이 추천한 크리에이터에 대한 신뢰에도 영향을 줄 수 있기 때문입니다. <strong>배송, 교환·환불, 고객 응대는 현대홈쇼핑이 맡겠습니다.</strong> 현대홈쇼핑은 2026 NCSI TV홈쇼핑 부문 5년 연속 1위, Hmall은 2025 KCSI 인터넷쇼핑몰 부문 6년 연속 1위입니다. 이 두 개의 1위는 고객의 구매 경험을 꾸준히 관리해 왔다는 외부 평가입니다. 그 운영으로 여러분의 추천과 신뢰까지 지키겠습니다. 여러분은 판매 이후의 CS가 아니라, 콘텐츠와 구독자에게 집중해 주세요.</p>
+            </details>
+            <div class="director-note"><b>구글 제작 메모</b><span>‘배송·교환·환불·CS’를 가장 크게. NCSI·KCSI는 인증 배지 크기의 근거로만 배치. 만족도 수치가 아니라 ‘추천 이후의 책임’이 주인공.</span></div>
+          </div>
+        </article>
+
+        <article class="cue-card">
+          <div class="cue-time"><span class="slide-no">SLIDE 04</span><time>03:00–03:45</time><small>45초</small></div>
+          <div class="cue-main">
+            <div class="cue-title-row">
+              <h3>매뉴얼보다 중요한 건, 답해줄 사람입니다</h3>
+              <span class="intent">사람이 있는 지원</span>
+            </div>
+            <div class="screen-copy">
+              <div class="mini-label">화면 핵심 문구</div>
+              <strong>온보딩 문서 + 쇼핑스타 전담 카카오채널</strong>
+              <div class="three-pillars">
+                <div class="pillar"><b>시작 전</b><span>한눈에 보는 온보딩 문서</span></div>
+                <div class="pillar"><b>운영 중</b><span>상품·프로모션·태그·정산 문의</span></div>
+                <div class="pillar"><b>전담 담당자</b><span>카카오채널에서 직접 답변</span></div>
+              </div>
+            </div>
+            <details open>
+              <summary>상무님 발화문</summary>
+              <p class="speech">운영을 시작하면 가장 답답한 순간은 매뉴얼이 없을 때보다, 답을 줄 사람이 없을 때입니다. 가입부터 정산까지 한눈에 보는 온보딩 문서를 드리겠습니다. 그리고 쇼핑스타 전용 카카오채널 뒤에 <strong>전담 담당자</strong>를 두겠습니다. 어떤 상품이 맞는지부터 프로모션, 태그, 정산까지 그냥 물어보세요. 검색하고 기다리게 하지 않고, 사람이 직접 답하겠습니다.</p>
+            </details>
+            <div class="director-note"><b>구글 제작 메모</b><span>질문 말풍선과 ‘전담 담당자가 직접 답변’ 문구만. 이 슬라이드에는 QR을 노출하지 않아 청중의 시선을 무대에 유지.</span></div>
+          </div>
+        </article>
+
+        <article class="cue-card">
+          <div class="cue-time"><span class="slide-no">SLIDE 05</span><time>03:45–05:00</time><small>1분 15초</small></div>
+          <div class="cue-main">
+            <div class="cue-title-row">
+              <h3>직접 경험하고, 첫 태그로 확인해 주세요</h3>
+              <span class="intent">체험 → 행동 → 선언</span>
+            </div>
+            <div class="screen-copy">
+              <div class="mini-label">화면 핵심 문구</div>
+              <strong>Hmall 50,000P로 먼저 경험하세요 · QR 등록 선착순 50명 코아시스 세트</strong>
+              <div class="three-pillars">
+                <div class="pillar"><b>쇼핑스타 전원</b><span>응원 메시지 카드</span></div>
+                <div class="pillar"><b>50,000P</b><span>Hmall 적립금</span></div>
+                <div class="pillar"><b>9월 안에</b><span>적립금 사용 가능</span></div>
+              </div>
+            </div>
+            <details open>
+              <summary>상무님 발화문</summary>
+              <p class="speech">모든 쇼핑스타분께 드리는 <strong>Hmall 적립금 5만원</strong>은 단순한 선물만은 아닙니다. 9월 안에 직접 사고, 받아보고, 사용해 보세요. 그리고 내 팬에게 정말 소개할 만한 상품인지 먼저 고객의 눈으로 판단해 주십시오. 응원 카드도 함께 준비했습니다. 마지막으로 지금 화면의 카카오채널을 등록해 주세요. 등록을 확인한 선착순 50분께는 현장에서 코아시스 화장품세트를 드립니다.</p>
+              <p class="speech"><strong>9월 1일 상품 공개, 9월 7일 시작, 첫 한 달 20%.</strong> 그리고 판매 뒤의 운영은 현대홈쇼핑이 맡겠습니다. 크리에이터가 유통사를 선택하는 시대입니다. 저희를 믿어 달라는 말 대신, 상품과 조건과 운영으로 보여드리겠습니다. 현대홈쇼핑을 첫 태그로 확인해 주십시오. 여러분은 팬과 콘텐츠에 집중해 주세요. <strong>그 뒤는 저희가 맡겠습니다.</strong> 감사합니다.</p>
+            </details>
+            <div class="director-note"><b>구글 제작 메모</b><span>이 장에서만 카카오채널 QR 노출. ‘선착순 → 채널 등록 → 코아시스 세트 수령’과 ‘50,000P · 9월 내 사용’을 함께 표기. 마지막 문장 동안 ‘그 뒤는 저희가 맡겠습니다’만 남기고 화면 유지.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="full-script" id="script">
+      <div class="page">
+        <div class="section-head">
+          <div class="section-kicker">03 · Speaker Script</div>
+          <div>
+            <h2>상무님 통합 발화 원고</h2>
+            <p class="section-lead">문장 그대로 읽기보다 굵은 구절을 기준으로 말하면 자연스럽습니다. 노란 표시는 최종 정보로 교체해야 합니다.</p>
+          </div>
+        </div>
+
+        <article class="script-panel">
+          <div class="script-toolbar">
+            <div><b>목표 5분 전후</b><br><span>강조·호흡 포함 · 6분 상한 대비 약 1분 여유</span></div>
+            <button class="btn" type="button" id="copyScript">전체 원고 복사</button>
+          </div>
+          <div class="script-body" id="scriptBody">
+            <p><span class="beat">00:00</span>안녕하세요. 현대홈쇼핑 영업전략담당 이경우입니다. 오늘 회사 소개는 하지 않겠습니다. <strong>20%.</strong> 오늘 제가 가장 먼저 드릴 숫자입니다. 9월 7일부터 한 달간, 오늘 계신 모든 쇼핑스타분이 참여하실 수 있습니다. 그런데 수수료가 높다고 아무 상품이나 태그하시지는 않겠죠. 상품을 태그하는 순간, 여러분의 이름과 팬의 신뢰도 함께 걸리기 때문입니다. 그래서 현대홈쇼핑은 수수료만 말씀드리지 않겠습니다. <strong>팔 만한 상품과 조건, 그리고 추천 이후의 고객 경험까지</strong> 준비하겠습니다.</p>
+
+            <p><span class="beat">00:45</span>상품이 많다고 태그할 상품이 많은 것은 아닙니다. <strong>9월 1일, 쇼핑스타 전용 핫딜 페이지</strong>를 공개하겠습니다. 현대홈쇼핑 MD가 콘텐츠로 소개하기 좋고 가격 혜택이 분명한 상품을 먼저 골라 보여드리겠습니다. 상품 구성과 상품 수도 이날 함께 공개합니다. 그리고 9월 7일부터 한 달간 수수료 20%, 이후에도 최소 10%를 운영합니다. 일부 상품은 제외됩니다. 상품과 시즌에 맞춘 추가 수수료 프로모션도 계속 운영하겠습니다. 첫 한 달 동안 여러 상품과 콘텐츠 조합을 시도해, 내 채널의 히트 상품을 가장 빨리 찾아보세요. 여러분은 상품을 찾는 시간보다, 상품을 어떻게 이야기할지에 더 많은 시간을 쓰시면 됩니다.</p>
+
+            <p><span class="beat">01:50</span>상품을 추천한 뒤 배송 문의나 교환 요청이 들어오면, 팬은 판매자가 아니라 여러분에게 먼저 묻기도 합니다. 구매 뒤의 불편이 추천한 크리에이터에 대한 신뢰에도 영향을 줄 수 있기 때문입니다. <strong>배송, 교환·환불, 고객 응대는 현대홈쇼핑이 맡겠습니다.</strong> 현대홈쇼핑은 2026 NCSI TV홈쇼핑 부문 5년 연속 1위, Hmall은 2025 KCSI 인터넷쇼핑몰 부문 6년 연속 1위입니다. 이 두 개의 1위는 고객의 구매 경험을 꾸준히 관리해 왔다는 외부 평가입니다. 그 운영으로 여러분의 추천과 신뢰까지 지키겠습니다. 여러분은 판매 이후의 CS가 아니라, 콘텐츠와 구독자에게 집중해 주세요.</p>
+
+            <p><span class="beat">03:00</span>운영을 시작하면 가장 답답한 순간은 매뉴얼이 없을 때보다, 답을 줄 사람이 없을 때입니다. 가입부터 정산까지 한눈에 보는 온보딩 문서를 드리겠습니다. 그리고 쇼핑스타 전용 카카오채널 뒤에 <strong>전담 담당자</strong>를 두겠습니다. 어떤 상품이 맞는지부터 프로모션, 태그, 정산까지 그냥 물어보세요. 검색하고 기다리게 하지 않고, 사람이 직접 답하겠습니다.</p>
+
+            <p><span class="beat">03:45</span>모든 쇼핑스타분께 드리는 <strong>Hmall 적립금 5만원</strong>은 단순한 선물만은 아닙니다. 9월 안에 직접 사고, 받아보고, 사용해 보세요. 그리고 내 팬에게 정말 소개할 만한 상품인지 먼저 고객의 눈으로 판단해 주십시오. 응원 카드도 함께 준비했습니다. 마지막으로 지금 화면의 카카오채널을 등록해 주세요. 등록을 확인한 선착순 50분께는 현장에서 코아시스 화장품세트를 드립니다.</p>
+
+            <p><strong>9월 1일 상품 공개, 9월 7일 시작, 첫 한 달 20%.</strong> 그리고 판매 뒤의 운영은 현대홈쇼핑이 맡겠습니다. 크리에이터가 유통사를 선택하는 시대입니다. 저희를 믿어 달라는 말 대신, 상품과 조건과 운영으로 보여드리겠습니다. 현대홈쇼핑을 첫 태그로 확인해 주십시오. 여러분은 팬과 콘텐츠에 집중해 주세요. <strong>그 뒤는 저희가 맡겠습니다.</strong> 감사합니다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="page checks" id="checks">
+      <div class="section-head">
+        <div class="section-kicker">04 · Google Handoff</div>
+        <div>
+          <h2>구글 제작팀 전달사항과<br>현장 준비 체크입니다.</h2>
+          <p class="section-lead">큐시트와 발화문은 확정본입니다. 아래 항목은 PPT 제작과 현장 운영 과정에서 실제 이미지·QR·약관 표기로 마감합니다.</p>
+        </div>
+      </div>
+
+      <div class="checks-grid">
+        <article class="card check-card">
+          <h3>제작·운영 반영 항목 8개</h3>
+          <div class="check-list">
+            <div class="check-item">9월 1일 핫딜 페이지 실제 화면 구글 전달</div>
+            <div class="check-item">9월 1일 공개 상품 구성·상품 수 확정</div>
+            <div class="check-item">온보딩 문서 배포 시점·전달 경로 확정</div>
+            <div class="check-item">카카오채널 QR 생성·현장 접속 테스트</div>
+            <div class="check-item">코아시스 화장품세트 실물 이미지·50세트 준비</div>
+            <div class="check-item">선착순 등록 확인 → 현장 수령 운영 방식</div>
+            <div class="check-item">Hmall 5만원 지급 방식·9월 내 사용 조건 안내</div>
+            <div class="check-item">상무님 실측 리허설 5분 전후·6분 이내 확인</div>
+          </div>
+        </article>
+
+        <article class="card check-card">
+          <h3>표현 가드레일</h3>
+          <ul class="guardrail">
+            <li>별도 프로그램명을 만들지 않고 ‘유튜브 쇼핑 제휴 프로그램에 현대홈쇼핑 참여’로 통일합니다.</li>
+            <li>20%와 최소 10%는 크게 쓰되 모든 화면에 ‘일부 상품 제외’ 각주를 일관되게 적용합니다.</li>
+            <li>고객만족도는 반드시 조사명·연도·부문·연속 횟수를 함께 표기합니다.</li>
+            <li>NCSI·KCSI 결과를 배송·교환·환불 각각의 단독 평가 결과처럼 확대 해석하지 않습니다.</li>
+            <li>카카오채널 QR은 마지막 슬라이드에서만 노출해 발표 중간 이탈을 막습니다.</li>
+            <li>코아시스 선물은 ‘선착순 → 카카오채널 등록 확인 → 현장 수령’ 순서로 안내합니다.</li>
+            <li>부스 위치·약도는 발표 화면에서 제외하고 구글 현장 안내에 맡깁니다.</li>
+          </ul>
+          <div class="source-note">행사 맥락 참고: <a href="https://blog.youtube/intl/ko-kr/news-and-events/youtube-week-2026/" target="_blank" rel="noreferrer">YouTube Week 2026 공식 블로그</a> · <a href="https://blog.youtube/intl/ko-kr/news-and-events/youtube-shopping-accelerator-2025/" target="_blank" rel="noreferrer">YouTube Shopping Accelerator 2025</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page footer-inner">
+      <span>현대홈쇼핑 × YouTube Shopping · 쇼핑 스타 행사 발표 큐시트</span>
+      <span class="draft-badge">FINAL v1.0 · Google 제작·발표자 전달용 · 2026.08.18</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">원고를 복사했습니다.</div>
+
+  <script>
+    const speakerButton = document.getElementById('speakerMode');
+    const copyButton = document.getElementById('copyScript');
+    const toast = document.getElementById('toast');
+
+    speakerButton.addEventListener('click', () => {
+      const active = document.body.classList.toggle('speaker-mode');
+      speakerButton.textContent = active ? '검토 화면으로' : '발표자 모드';
+      if (active) document.getElementById('script').scrollIntoView();
+      else window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    copyButton.addEventListener('click', async () => {
+      const text = document.getElementById('scriptBody').innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (error) {
+        const area = document.createElement('textarea');
+        area.value = text;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand('copy');
+        area.remove();
+      }
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1600);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && document.body.classList.contains('speaker-mode')) {
+        document.body.classList.remove('speaker-mode');
+        speakerButton.textContent = '발표자 모드';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>
