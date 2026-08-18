@@ -5,4 +5,4 @@
 - 발표자: 현대홈쇼핑 영업전략담당 이경우 상무
 - 목표 시간: 약 5분
 - 공유 페이지: https://kimyoungil21.github.io/hyundai-shoppingstar-2026/
-
+- 3개 전략안 병합 검토: https://kimyoungil21.github.io/hyundai-shoppingstar-2026/review/
