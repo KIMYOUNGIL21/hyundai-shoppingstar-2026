@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>현대홈쇼핑 × 유튜브 쇼핑 — 최종 통합본 (8/19 개정)</title>
-  <meta name="description" content="현대홈쇼핑 영업전략담당 이경우 상무의 유튜브 쇼핑 제휴프로그램 발표 최종 통합본 (8/19 개정). 8월 28일 발표 · 6장, 약 5분 55초 구성입니다.">
+  <title>현대홈쇼핑 × 유튜브 쇼핑 — 구글 제작 전달본</title>
+  <meta name="description" content="현대홈쇼핑 유튜브 쇼핑 제휴프로그램 발표 PPT 제작 의뢰서. 2026년 8월 28일 발표, 6장, 약 5분 55초.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="현대홈쇼핑 × 유튜브 쇼핑 — 최종 통합본 (8/19 개정)">
+  <meta property="og:title" content="현대홈쇼핑 × 유튜브 쇼핑 — 구글 제작 전달본">
   <meta property="og:description" content="20%로 시작하고, 추천 이후까지 책임집니다.">
   <meta property="og:url" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/">
   <meta property="og:image" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/og-final-v1.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="현대홈쇼핑 × 유튜브 쇼핑 — 최종 통합본 (8/19 개정)">
+  <meta name="twitter:title" content="현대홈쇼핑 × 유튜브 쇼핑 — 구글 제작 전달본">
   <meta name="twitter:description" content="20%로 시작하고, 추천 이후까지 책임집니다.">
   <meta name="twitter:image" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/og-final-v1.png">
   <style>
@@ -326,118 +326,85 @@
       section { margin-top: 46px; break-inside: avoid; }
       .slide-card, .check-card, .source-card { break-inside: avoid; box-shadow: none; }
     }
+
+    .cover { padding: 44px 0 38px; color: #fff; background: var(--ink); }
+    .cover-eyebrow { color: #ffaaa1; font-size: 12px; font-weight: 850; letter-spacing: .14em; }
+    .cover h1 { margin: 16px 0 0; font-size: clamp(30px,4.6vw,52px); line-height: 1.12; letter-spacing: -.05em; font-weight: 880; }
+    .cover-lead { max-width: 780px; margin: 18px 0 0; color: #c8c4bd; font-size: 16px; }
+    .cover-meta { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px 34px; margin-top: 28px; }
+    .cover-meta > div { padding-top: 11px; border-top: 1px solid rgba(255,255,255,.16); }
+    .cover-meta b { display: block; color: #aaa69f; font-size: 11px; font-weight: 800; letter-spacing: .1em; }
+    .cover-meta span { display: block; margin-top: 4px; font-size: 15px; font-weight: 700; }
+    @media (max-width: 650px) { .cover-meta { grid-template-columns: 1fr; } }
+
+    @page { size: A4 portrait; margin: 13mm 11mm; }
+    @media print {
+      html, body { background: #fff !important; }
+      .topbar { display: none !important; }
+      .cover { padding: 0 0 22px; color: #161616; background: #fff; border-bottom: 3px solid var(--coral); break-after: page; }
+      .cover h1 { font-size: 30px; }
+      .cover-lead { color: #4a4640; font-size: 12px; }
+      .cover-eyebrow { color: var(--coral-dark); }
+      .cover-meta > div { border-top: 1px solid rgba(22,22,22,.2); }
+      .cover-meta b { color: #6c6963; }
+      .cover-meta span { font-size: 12px; }
+      main { padding: 0 !important; }
+      .wrap { width: 100% !important; }
+      section { margin-top: 0 !important; padding-top: 16px; break-before: page; }
+      section:first-of-type { break-before: auto; }
+      .section-head { margin-bottom: 16px; padding-bottom: 12px; }
+      h2 { font-size: 22px; }
+      .section-intro { font-size: 11px; }
+      .slide-card { margin-bottom: 12px; break-inside: avoid; box-shadow: none !important; border: 1px solid #c9c4ba; }
+      .slide-top { padding: 12px 16px; }
+      .slide-title { font-size: 15px; }
+      .slide-index, .slide-time { font-size: 10px; }
+      .screen-copy, .speech { padding: 16px; }
+      .screen-copy h4 { font-size: 17px; }
+      .speech p { font-size: 11.5px; line-height: 1.6; margin-top: 8px; }
+      .screen-copy p, .visual-chip { font-size: 10.5px; }
+      .director-note, .fact-note { padding: 10px 16px; font-size: 10.5px; }
+      .director-note p { font-size: 10.5px; margin-top: 4px; }
+      .brief-grid { grid-template-columns: 1fr; }
+      .brief-index { display: none; }
+      .brief-copy { padding: 0; border: 0; box-shadow: none; }
+      .brief-copy h3 { font-size: 18px; }
+      .brief-copy h4 { font-size: 13px; margin-top: 16px; }
+      .brief-copy p { font-size: 11.5px; line-height: 1.65; }
+      .brief-copy .emphasis { font-size: 12px; padding: 12px 14px; }
+      .check-grid { grid-template-columns: repeat(2,1fr); gap: 10px; }
+      .check-card { padding: 14px; break-inside: avoid; }
+      .check-card h3 { font-size: 14px; }
+      .check-card li { font-size: 10.5px; margin: 5px 0; }
+      .sources { grid-template-columns: repeat(3,1fr); }
+      .source-card { padding: 12px; }
+      .source-card strong { font-size: 12px; }
+      .source-card span { font-size: 10px; }
+      footer { padding: 16px 0 0; break-before: avoid; }
+    }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span>최종 통합본 · 8/19 개정</a>
-      <div class="toolbar">
-        <a href="../review/">병합 검토본</a>
-        <a href="../">이전 큐시트</a>
-        <button id="speakerMode" class="primary" type="button">발표자 모드</button>
-      </div>
+      <span class="brand"><span class="brand-dot" aria-hidden="true"></span>PPT 제작 의뢰서 · 현대홈쇼핑</span>
     </div>
   </header>
 
-  <div id="top" class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">FINAL INTEGRATED CUE SHEET · REV 08.19</div>
-        <h1><em>20%로 시작하고,</em><br>추천 이후까지 책임집니다.</h1>
-        <p class="hero-copy">크리에이터가 듣고 싶은 조건을 먼저 밝히고, 현대홈쇼핑만이 가진 명품 주얼리·백화점 상품력, 자체 브랜드 오너십, 임원이 직접 받는 운영 라인으로 신뢰를 완성하는 6장 구성입니다.</p>
-      </div>
-      <aside class="identity-card">
-        <span class="version">APPROVED DIRECTION</span>
-        <strong>태그 전에는 상품을 고르고,<br>태그 뒤에는 고객 경험을 책임집니다.</strong>
-        <div class="identity-list">
-          <div class="identity-line"><span>발표자</span><span>영업전략담당 이경우 상무</span></div>
-          <div class="identity-line"><span>목표 시간</span><span>약 5분 55초 · 최대 6분</span></div>
-          <div class="identity-line"><span>형식</span><span>6장 · 구글 제작용 큐시트</span></div>
-          <div class="identity-line"><span>발표일</span><span>2026년 8월 28일</span></div>
-        </div>
-      </aside>
-    </div>
-  </div>
-
-  <div class="summary-strip">
-    <div class="wrap summary-grid">
-      <div class="summary-item"><b>WHO</b><strong>오늘 참석한 쇼핑스타 전원</strong></div>
-      <div class="summary-item"><b>WHEN</b><strong>9월 1일 상품 공개 · 9월 8일 시작</strong></div>
-      <div class="summary-item"><b>OFFER</b><strong>첫 한 달 20% · 이후 최소 10% · 일부 상품 제외</strong></div>
-      <div class="summary-item"><b>ONLY US</b><strong>브랜드 오너십 · 명품 주얼리 1,300억 · 임원 직통</strong></div>
-    </div>
-  </div>
-
-  <nav class="anchor-nav" aria-label="페이지 목차">
+  <div class="cover">
     <div class="wrap">
-      <a href="#strategy">전략</a>
-      <a href="#slides">6장 큐시트</a>
-      <a href="#brief">구글 제작 브리프</a>
-      <a href="#script">전체 원고</a>
-      <a href="#checks">최종 체크</a>
-      <a href="#sources">근거</a>
+      <div class="cover-eyebrow">PPT PRODUCTION BRIEF</div>
+      <h1>현대홈쇼핑 × 유튜브 쇼핑<br>발표 PPT 제작 의뢰서</h1>
+      <p class="cover-lead">2026 유튜브 쇼핑 스타 행사에서 사용할 발표 자료입니다. 슬라이드별 화면 문구와 발화, 제작 시 유의사항을 정리했습니다.</p>
+      <div class="cover-meta">
+        <div><b>발표자</b><span>현대홈쇼핑 영업전략담당 이경우 상무</span></div>
+        <div><b>발표일</b><span>2026년 8월 28일</span></div>
+        <div><b>분량</b><span>6장 · 목표 5분 55초 / 최대 6분</span></div>
+        <div><b>핵심 메시지</b><span>“여러분은 팬과 콘텐츠에 집중해 주세요. 그 뒤는 저희가 맡겠습니다.”</span></div>
+      </div>
     </div>
-  </nav>
-
+  </div>
   <main class="wrap">
-    <section id="strategy">
-      <div class="section-head">
-        <div class="section-no">01 · MESSAGE STRATEGY</div>
-        <div>
-          <h2>조건으로 귀를 열고,<br>현대홈쇼핑의 책임으로 기억됩니다.</h2>
-          <p class="section-intro">상품력과 회사소개는 신뢰를 만드는 근거입니다. 발표의 중심은 어디까지나 크리에이터가 팬과 콘텐츠에 집중할 수 있도록 추천 전과 추천 이후를 현대홈쇼핑이 맡는다는 약속입니다. 이번 개정에서는 그 약속을 <strong>상품·협업·운영 세 개의 킥</strong>으로 뒷받침했습니다. 특히 <strong>자체 브랜드 오너십에 기반한 협업 모델</strong>은 상품을 소유한 회사만 꺼낼 수 있는 카드라, 상품 슬라이드 바로 뒤(03번)로 끌어올렸습니다.</p>
-        </div>
-      </div>
-      <div class="thesis">
-        <div>
-          <span class="mini-label">무대에서 남길 한 문장</span>
-          <blockquote>“현대홈쇼핑은 수수료만 제공하는 제휴사가 아니라, 여러분의 추천 이후까지 책임지는 커머스 파트너가 되겠습니다.”</blockquote>
-          <p>20%는 가장 먼저 말하되, 마지막 문장은 “그 뒤는 저희가 맡겠습니다”로 끝냅니다.</p>
-        </div>
-        <div>
-          <span class="mini-label">발표의 내부 논리</span>
-          <blockquote>상품 → 조건 → 신뢰 → 지원 → 행동</blockquote>
-          <p>회사 자랑의 순서가 아니라 크리에이터가 실제로 제휴사를 판단하는 순서로 구성합니다.</p>
-        </div>
-      </div>
-
-      <div class="thesis" style="margin-top:18px">
-        <div>
-          <span class="mini-label">킥 1 · 상품 — 지금 당장 태그할 것</span>
-          <blockquote>명품 주얼리를 연 1,300억 원<br>규모로 직접 매입합니다.</blockquote>
-          <p>직매입이라 정품 여부가 분명하고, 물량이 있어 품절로 콘텐츠가 묻히지 않습니다. 여기에 현대백화점그룹이라는 이유로 백화점 상품 공급까지 원활합니다.</p>
-        </div>
-        <div>
-          <span class="mini-label">킥 2 · 협업 — 여기만 할 수 있는 것</span>
-          <blockquote>브랜드가 저희 것이라,<br>함께 만들 수 있습니다.</blockquote>
-          <p>직수입·총판 브랜드와 패션 PB를 합쳐 라씨엔토, 고비, 프리마클라세 등을 직접 운영합니다. 기획·사양·가격 결정권이 저희에게 있어 <strong>공동구매, 기획 참여, 전용 상품</strong>까지 단계적으로 열립니다. 다른 제휴사는 ‘팔 상품을 준다’까지만 말할 수 있습니다.</p>
-        </div>
-      </div>
-
-      <div class="thesis" style="margin-top:18px">
-        <div>
-          <span class="mini-label">세 킥의 관계 · 이 순서로 말합니다</span>
-          <blockquote>지금 판다 →<br>같이 만든다 →<br>안 되면 제가 받습니다.</blockquote>
-          <p>상품(02)은 오늘 시작할 이유, 협업(03)은 오래 할 이유, 운영(06)은 믿을 이유입니다. 상품과 협업을 붙여 놓아야 “팔 것도 있고 만들 것도 있다”가 한 호흡으로 전달됩니다.</p>
-        </div>
-        <div>
-          <span class="mini-label">킥 3 · 운영 — 오늘 이 자리에서만</span>
-          <blockquote>담당자로 안 풀리면<br>제 번호로 연락하십시오.</blockquote>
-          <p>발표자가 임원인 회사는 오늘 이 자리에서 현대홈쇼핑뿐입니다. 그 사실을 말이 아니라 연락처로 증명하는 연출입니다.</p>
-        </div>
-      </div>
-
-      <div class="story-flow">
-        <div class="story-step"><b>01 · HOOK</b><strong>첫 한 달 20%</strong><p>조건을 먼저 공개해 집중을 잡습니다.</p></div>
-        <div class="story-step"><b>02 · PRODUCT</b><strong>명품 주얼리와 백화점</strong><p>연 1,300억 직매입과 백화점 상품 공급입니다.</p></div>
-        <div class="story-step"><b>03 · PARTNER</b><strong>함께 만드는 관계</strong><p>브랜드를 소유해 공동구매·기획·전용 상품이 가능합니다.</p></div>
-        <div class="story-step"><b>04 · OFFER</b><strong>핫딜과 수수료</strong><p>9.1 공개, 9.8 시작, 첫 달 20%입니다.</p></div>
-        <div class="story-step"><b>05 · TRUST</b><strong>고객만족도 1위</strong><p>추천 이후의 CS를 저희가 맡습니다.</p></div>
-        <div class="story-step"><b>06 · ACTION</b><strong>임원 직통라인</strong><p>온보딩·전담채널 위에 상무 직통을 얹습니다.</p></div>
-      </div>
-    </section>
-
     <section id="slides">
       <div class="section-head">
         <div class="section-no">02 · SIX SLIDES</div>
@@ -634,32 +601,6 @@
       </div>
     </section>
 
-    <section id="script">
-      <div class="section-head">
-        <div class="section-no">04 · FULL SCRIPT</div>
-        <div>
-          <h2>발표자용 전체 원고</h2>
-          <p class="section-intro">슬라이드 전환과 강조 호흡을 포함해 약 5분 55초를 목표로 합니다. 실측 원고량 1,271자 기준 분당 250자 낭독 시 5분 5초, 가장 느린 분당 230자에 슬라이드 전환 5회를 더해도 5분 42초로 최대 6분 안에 들어옵니다.</p>
-        </div>
-      </div>
-      <div class="full-script">
-        <div class="script-meta"><span>발표자 · 영업전략담당 이경우 상무</span><span>목표 · 05:55 / 최대 · 06:00</span></div>
-        <div class="script-text" id="scriptText">
-          <p><span class="beat">00:00</span>안녕하세요. 현대홈쇼핑 영업전략담당 이경우입니다. 오늘 가장 먼저 드릴 숫자는 <strong>20%</strong>입니다. 9월 8일부터 한 달간, 오늘 이 자리에 계신 모든 쇼핑스타분이 참여하실 수 있습니다. 그런데 수수료가 높다고 아무 상품이나 태그하시지는 않겠죠. 상품을 태그하는 순간 여러분의 이름과 팬의 신뢰도 함께 걸리기 때문입니다. 그래서 <strong>팔 만한 상품과 추천 이후의 고객 경험까지</strong> 함께 준비하겠습니다.</p>
-          <p><span class="beat">00:50</span>현대홈쇼핑은 현대백화점그룹의 유통사입니다. TV홈쇼핑부터 Hmall, 라이브 커머스 <strong>쇼라</strong>, 뷰티 편집숍 <strong>코아시스</strong>까지 운영해 왔습니다.</p>
-          <p>저희가 가진 것은 두 가지입니다. 첫째, <strong>명품 주얼리를 연간 1,300억 원 규모로 직접 매입</strong>합니다. 직매입이라 정품 여부가 분명하고, 물량이 있기 때문에 품절로 콘텐츠가 묻히는 일이 적습니다. 둘째, <strong>현대백화점그룹이기 때문에 백화점 상품 공급이 원활</strong>합니다. 백화점에서 보시던 상품을 여러분 채널에서 태그하실 수 있습니다.</p>
-          <p><span class="beat">01:48</span>그리고 하나 더 말씀드리겠습니다. 저희는 상품을 소싱만 하는 회사가 아닙니다. 직접 수입해 총판을 맡는 브랜드도 있고, 직접 만든 패션 브랜드도 있습니다. <strong>라씨엔토, 고비, 프리마클라세 등</strong> 여러 브랜드를 저희가 직접 운영합니다.</p>
-          <p>이 브랜드들은 <strong>기획과 사양, 가격을 저희가 결정</strong>합니다. 그래서 여러분과는 태그를 넘어선 협업이 가능합니다. <strong>공동구매</strong>를 함께 열 수도 있고, <strong>기획 단계부터 여러분이 참여</strong>하실 수도 있습니다. 나아가 여러분의 채널과 팬에 맞춘 <strong>전용 상품을 함께 만들고 싶습니다.</strong></p>
-          <p><span class="beat">02:54</span>상품이 많다고 태그할 상품이 많은 것은 아닙니다. <strong>9월 1일, 쇼핑스타 전용 핫딜 페이지</strong>를 공개하겠습니다. 현대홈쇼핑 MD가 콘텐츠로 소개하기 좋고 가격 혜택이 분명한 상품을 먼저 골라 보여드리겠습니다. 그리고 9월 8일부터 한 달간 수수료 20%, 이후에도 최소 10%를 운영합니다. 일부 상품은 제외됩니다. 여러분은 상품을 찾는 시간보다, <strong>그 상품을 어떻게 이야기할지</strong>에 더 많은 시간을 써주십시오.</p>
-          <p><span class="beat">03:41</span>상품 하나를 태그하는 일은 여러분의 이름을 거는 일입니다. 판매 전 선별과 판매 후 배송·교환·환불, 고객 응대는 현대홈쇼핑이 맡겠습니다. 현대홈쇼핑은 <strong>국가고객만족도 TV홈쇼핑 부문 5년 연속 1위</strong>, 한국산업 고객만족도에서는 <strong>TV홈쇼핑과 인터넷쇼핑몰 두 부문 모두 1위</strong>입니다. 여러분의 추천도 그 운영으로 지키겠습니다.</p>
-          <p><span class="beat">04:21</span>운영을 시작하면 가장 답답한 순간은 답을 줄 사람이 없을 때입니다. 가입부터 정산까지 한눈에 보는 온보딩 문서를 드리고, 쇼핑스타 전용 카카오채널에는 <strong>전담 담당자</strong>를 두겠습니다.</p>
-          <p>그런데 담당자 선에서 풀리지 않는 일도 있습니다. 그래서 오늘 <strong>제 휴대폰 번호를 공개하겠습니다.</strong> 담당자로 해결되지 않으면 저에게 바로 연락 주십시오. <strong>제가 직접 받고, 직접 해결하겠습니다.</strong></p>
-          <p>오늘 드리는 <strong>Hmall 적립금 5만원</strong>은 9월 안에 직접 사보고, 받아보고, 써보시는 데 활용해 주십시오. 화면의 카카오채널을 등록하신 선착순 50분께는 코아시스 화장품세트도 현장에서 드립니다.</p>
-          <p><strong>9월 1일 상품 공개, 9월 8일 시작, 첫 한 달 20%.</strong> 크리에이터가 유통사를 선택하는 시대입니다. 저희를 믿어 달라는 말 대신, 상품과 조건과 운영으로 보여드리겠습니다. 여러분은 팬과 콘텐츠에 집중해 주세요. <strong>그 뒤는 저희가 맡겠습니다.</strong> 감사합니다.</p>
-        </div>
-      </div>
-    </section>
-
     <section id="checks">
       <div class="section-head">
         <div class="section-no">05 · FINAL CHECKS</div>
@@ -668,7 +609,7 @@
         </div>
       </div>
       <div class="check-grid">
-        <article class="check-card"><b>운영 킥 · 번호 공개</b><h3>번호는 확정, 운영은 미정</h3><ul><li>공개할 번호 — <strong>확정 완료.</strong> 이 페이지는 공개 URL이라 번호를 싣지 않습니다. 구글 담당자에게 별도 전달합니다.</li><li><strong>회사 승인</strong> — 임원 개인번호 대외 공개는 통상 컴플라이언스 확인 대상입니다. 사전 확인이 끝났는지 짚어 주십시오.</li><li><strong>회수 불가</strong> — 크리에이터 행사라 화면이 촬영돼 영상·SNS로 퍼지면 되돌릴 수 없습니다. 개인번호 대신 회사 명의 업무용 번호를 쓰면 최악의 경우 회선 정리가 가능합니다.</li><li><strong>응대 가능량</strong> — 참석자가 정산·배송 문의를 직접 걸면 감당이 어렵습니다. 못 받는 순간 ‘책임지겠다’는 발표 전체가 무너집니다.</li><li><strong>완화 장치</strong> — 원고에 “담당자 선에서 풀리지 않으면”이라는 조건을 넣어 1차 창구를 카카오채널로 유지했습니다. 이 문장은 빼지 마십시오.</li></ul></article>
+        <article class="check-card"><b>DIRECT LINE</b><h3>직통번호 슬라이드</h3><ul><li><strong>번호는 이 문서에 없습니다.</strong> 보안상 별도 전달드립니다.</li><li><strong>단독 슬라이드 한 장</strong>으로 빼주십시오. 검은 화면에 번호만.</li><li>로고·QR·설명 문구를 함께 얹지 마십시오. 효과가 사라집니다.</li><li>“제가 직접 받고, 직접 해결하겠습니다”에서 <strong>3초 정지</strong>합니다.</li><li>이 순간이 발표 전체의 절정입니다.</li></ul></article>
         <article class="check-card"><b>FACTS</b><h3>화면 표기</h3><ul><li>명품 연간 1,300억 매입 ✅ 사내 확인 완료</li><li>NCSI·KCSI ✅ 외부 출처 확인 완료 (하단 근거 참조)</li><li>20% 및 최소 10%에 ‘일부 상품 제외’ 각주</li><li>상품 수는 확정 전 임의 기재 금지</li><li>서비스명은 ‘쇼라’로 통일</li><li><strong>전용 기획상품은 시점·물량을 약속하지 않습니다.</strong> ‘가능성’ 화법만 사용</li></ul></article>
         <article class="check-card"><b>VISUAL ASSETS</b><h3>실제 화면·이미지</h3><ul><li><strong>번호 단독 슬라이드</strong> — 검은 화면에 번호만. 로고·QR 금지</li><li>라씨엔토·고비·프리마클라세 등 브랜드 로고 및 대표 이미지 (슬라이드 03용)</li><li>⚠ 핫딜 페이지 실제 화면 — <strong>발표일 8/28은 공개일 9/1보다 앞서므로 실물이 없습니다.</strong> 예시 목업 또는 ‘9월 1일 공개 예정’ 처리로 확정 대체</li><li>명품·현대백화점 상품 대표 이미지 (PB는 발화에서 제외)</li><li>코아시스 화장품세트 실물 이미지</li><li>카카오채널 QR 및 현장 접속 테스트</li></ul></article>
         <article class="check-card"><b>ON-SITE FLOW</b><h3>현장 혜택</h3><ul><li>모든 쇼핑스타에게 응원 카드와 5만원 적립금</li><li>적립금은 9월 내 사용 가능</li><li>선착순 → 카카오채널 등록 확인 → 세트 수령</li><li>QA 부스 위치·약도는 PPT에 별도 작성하지 않음</li></ul></article>
@@ -695,24 +636,11 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <span>현대홈쇼핑 × 유튜브 쇼핑 제휴프로그램 · 최종 통합본 (8/19 개정)</span>
+      <span>현대홈쇼핑 × 유튜브 쇼핑 제휴프로그램 · 구글 제작 전달본</span>
       <span>발표자 · 영업전략담당 이경우 상무</span>
     </div>
   </footer>
 
-  <script>
-    const speakerButton = document.getElementById('speakerMode');
-    speakerButton.addEventListener('click', () => {
-      const active = document.body.classList.toggle('speaker-mode');
-      speakerButton.textContent = active ? '검토 화면으로' : '발표자 모드';
-      if (active) window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && document.body.classList.contains('speaker-mode')) {
-        document.body.classList.remove('speaker-mode');
-        speakerButton.textContent = '발표자 모드';
-      }
-    });
-  </script>
+</script>
 </body>
 </html>
