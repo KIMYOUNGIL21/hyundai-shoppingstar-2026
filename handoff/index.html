@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>현대홈쇼핑 × 유튜브 쇼핑 | 프로젝트 인수인계</title>
+  <meta name="description" content="2026 현대홈쇼핑 유튜브 쇼핑 발표 프로젝트의 기준본, 일정, 리스크와 운영 방법을 한곳에 정리한 인수인계 페이지입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="현대홈쇼핑 × 유튜브 쇼핑 | 프로젝트 인수인계">
+  <meta property="og:description" content="발표 8.28 · 상품 공개 9.1 · 제휴 시작 9.8">
+  <meta property="og:image" content="https://kimyoungil21.github.io/hyundai-shoppingstar-2026/handoff/og-handoff.png">
+  <meta name="theme-color" content="#151515">
+  <style>
+    @font-face{font-family:Pretendard;src:url('../_PretendardVariable.woff2') format('woff2');font-weight:100 900;font-display:swap}
+    :root{--ink:#191917;--muted:#6b6a65;--paper:#f4f0e8;--card:#fffdf8;--line:#ddd7cc;--coral:#ff654d;--mint:#cce7db;--yellow:#f2db75;--dark:#181817;--white:#fffdf8}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,system-ui,sans-serif;line-height:1.58;word-break:keep-all}
+    a{color:inherit}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .hero{padding:72px 0 60px;background:var(--dark);color:var(--white);position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:380px;height:380px;border:90px solid var(--coral);border-radius:50%;right:-170px;top:-170px;opacity:.9}
+    .eyebrow{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--coral);font-weight:800}
+    h1{font-size:clamp(38px,6vw,76px);line-height:1.03;letter-spacing:-.055em;margin:18px 0 24px;max-width:820px}
+    .lead{font-size:clamp(18px,2.2vw,25px);color:#dad7d0;max-width:720px;margin:0 0 34px}
+    .dates{display:flex;flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+    .date{padding:10px 15px;border:1px solid #474744;border-radius:999px;font-weight:750;background:#222220}
+    .date b{color:var(--coral);margin-right:7px}
+    .status{background:var(--coral);color:#1b1716;padding:12px 0;font-weight:850;text-align:center}
+    nav{position:sticky;top:0;z-index:10;background:rgba(244,240,232,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav .wrap{display:flex;gap:20px;overflow:auto;padding-top:13px;padding-bottom:13px;white-space:nowrap}
+    nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:720}
+    nav a:hover{color:var(--coral)}
+    main{padding:70px 0 100px}
+    section{margin-bottom:76px;scroll-margin-top:75px}
+    h2{font-size:clamp(30px,4vw,46px);line-height:1.12;letter-spacing:-.04em;margin:0 0 12px}
+    h3{font-size:20px;letter-spacing:-.02em;margin:0 0 10px}
+    .section-intro{color:var(--muted);font-size:17px;margin:0 0 27px;max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 28px rgba(35,32,25,.04)}
+    .card.wide{grid-column:span 6}
+    .card.full{grid-column:1/-1}
+    .num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--white);font-weight:850;margin-bottom:17px}
+    .card p{margin:0;color:var(--muted)}
+    .card ul{margin:12px 0 0;padding-left:19px;color:var(--muted)}
+    .action{display:inline-flex;margin-top:18px;padding:10px 14px;background:var(--ink);color:var(--white);text-decoration:none;border-radius:9px;font-size:14px;font-weight:760}
+    .action.alt{background:var(--coral);color:var(--ink)}
+    .tag{display:inline-block;font-size:12px;font-weight:800;padding:5px 9px;border-radius:999px;background:var(--mint);margin-bottom:13px}
+    .flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+    .slide{min-height:175px;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--coral);border-radius:14px;padding:17px}
+    .slide small{color:var(--coral);font-weight:850;letter-spacing:.08em}
+    .slide h3{margin-top:24px;font-size:18px}
+    .slide p{font-size:14px;color:var(--muted);margin:0}
+    table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+    th,td{text-align:left;vertical-align:top;padding:15px 16px;border-bottom:1px solid var(--line)}
+    th{font-size:13px;color:var(--muted);background:#eee9df}
+    tr:last-child td{border-bottom:0}
+    .ok{color:#287255;font-weight:800}.warn{color:#a34625;font-weight:800}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+    .milestone{padding:24px;border-right:1px solid var(--line);min-height:170px}
+    .milestone:last-child{border-right:0}
+    .milestone b{font-size:27px;display:block;letter-spacing:-.03em}
+    .milestone span{color:var(--coral);font-weight:800;font-size:13px}
+    .milestone p{color:var(--muted);font-size:14px;margin:12px 0 0}
+    .risk{border-left:7px solid var(--coral)}
+    .risk strong{display:block;font-size:19px;margin-bottom:6px}
+    code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#ece7dd;padding:2px 6px;border-radius:5px;font-size:.9em;word-break:break-all}
+    .command{background:#1d1d1b;color:#eae7e0;border-radius:12px;padding:17px 19px;margin-top:12px;overflow:auto;font:13px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:normal}
+    .callout{background:var(--yellow);border-radius:18px;padding:25px;font-weight:760}
+    .checklist{columns:2;column-gap:30px;margin:0;padding:0;list-style:none}
+    .checklist li{break-inside:avoid;margin:0 0 10px;padding-left:28px;position:relative}
+    .checklist li:before{content:"□";position:absolute;left:0;font-size:20px;line-height:1.2}
+    footer{background:var(--dark);color:#bcb9b2;padding:38px 0;font-size:14px}
+    footer strong{color:var(--white)}
+    @media(max-width:900px){.card,.card.wide{grid-column:span 6}.flow{grid-template-columns:repeat(3,1fr)}.timeline{grid-template-columns:repeat(2,1fr)}.milestone:nth-child(2){border-right:0}.milestone:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+    @media(max-width:620px){.wrap{width:min(100% - 26px,1120px)}.hero{padding-top:50px}.card,.card.wide{grid-column:1/-1}.flow{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr}.milestone{border-right:0!important;border-bottom:1px solid var(--line)}.milestone:last-child{border-bottom:0}.checklist{columns:1}th,td{padding:12px 10px;font-size:13px}}
+    @media print{nav,.status{display:none}.hero{padding:35px 0}.hero:after{display:none}main{padding:35px 0}section{break-inside:avoid;margin-bottom:40px}.card{box-shadow:none}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Project handoff · Start here</div>
+      <h1>현대홈쇼핑 ×<br>유튜브 쇼핑</h1>
+      <p class="lead">후임자가 30분 안에 프로젝트의 현재 상태를 이해하고, 발표일까지 안전하게 이어갈 수 있도록 만든 운영 기준본입니다.</p>
+      <div class="dates">
+        <div class="date"><b>발표</b> 8월 28일</div>
+        <div class="date"><b>상품 공개</b> 9월 1일</div>
+        <div class="date"><b>제휴 시작</b> 9월 8일</div>
+        <div class="date"><b>발표자</b> 이경우 상무</div>
+      </div>
+    </div>
+  </header>
+  <div class="status">2026.08.21 기준 · 6장 / 목표 5분 55초 / Google 제작 의뢰본 전달 준비 완료</div>
+  <nav><div class="wrap">
+    <a href="#start">먼저 할 일</a><a href="#files">기준본</a><a href="#story">발표 구조</a><a href="#facts">확정·금지</a><a href="#schedule">일정</a><a href="#risks">결정 필요</a><a href="#runbook">운영 방법</a><a href="#done">완료 기준</a>
+  </div></nav>
+
+  <main class="wrap">
+    <section id="start">
+      <div class="eyebrow">First 30 minutes</div>
+      <h2>처음 30분은 이렇게</h2>
+      <p class="section-intro">자료를 새로 만들기 전에 아래 순서로 읽고, 미결정 3건의 책임자를 먼저 정합니다.</p>
+      <div class="grid">
+        <article class="card"><div class="num">1</div><h3>발표 준비본 읽기</h3><p>6장 전체와 상무님 원고를 처음부터 끝까지 확인합니다.</p><a class="action" href="../final-v1/">내부 준비본 열기</a></article>
+        <article class="card"><div class="num">2</div><h3>Google 전달본 확인</h3><p>외부 전달용 설명과 제작 지시가 충분한지 확인합니다.</p><a class="action" href="../google/">Google 전달본 열기</a></article>
+        <article class="card"><div class="num">3</div><h3>결정 3건 잠그기</h3><p>직통번호 방식, 번호 화면의 장수, Google PPT 수령·수정 마감을 확정합니다.</p><a class="action alt" href="#risks">미결정 보기</a></article>
+      </div>
+    </section>
+
+    <section id="files">
+      <div class="eyebrow">Single source of truth</div>
+      <h2>어느 파일을 고쳐야 하나</h2>
+      <p class="section-intro"><code>final-v1/index.html</code>만 내용의 원본입니다. Google 전달본을 직접 고치면 다음 생성 때 덮어씌워집니다.</p>
+      <div class="grid">
+        <article class="card wide"><span class="tag">1순위 · 원본</span><h3>final-v1/index.html</h3><p>발표 전체 구성, 화면 문구, 원고, 내부 메모가 모두 들어 있습니다.</p><a class="action" href="../final-v1/">보기</a></article>
+        <article class="card wide"><span class="tag">파생본</span><h3>google/index.html</h3><p>Google 제작 담당자에게 보내는 서술형 의뢰본입니다. 빌드 스크립트로 다시 만듭니다.</p><a class="action" href="../google/">보기</a></article>
+        <article class="card"><h3>PDF 10p</h3><p>메일·메신저 전달 및 오프라인 백업용입니다. HTML 변경 뒤에는 다시 생성해야 합니다.</p><a class="action" href="../google/%ED%98%84%EB%8C%80%ED%99%88%EC%87%BC%ED%95%91_%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%87%BC%ED%95%91_PPT%EC%A0%9C%EC%9E%91%EC%9D%98%EB%A2%B0%EC%84%9C_20260828.pdf">PDF 열기</a></article>
+        <article class="card"><h3>build-google.js</h3><p>내부 정보 제거와 외부용 제작 지시 삽입 규칙입니다. 변경 시 검증 항목도 함께 고칩니다.</p></article>
+        <article class="card"><h3>HANDOFF.md</h3><p>상세 운영·기록용 문서입니다. 이 페이지보다 더 세밀한 근거가 필요할 때 봅니다.</p><a class="action" href="https://github.com/KIMYOUNGIL21/hyundai-shoppingstar-2026/blob/main/HANDOFF.md">GitHub에서 보기</a></article>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="eyebrow">Six-slide narrative</div>
+      <h2>발표의 한 줄과 6장</h2>
+      <p class="section-intro">핵심은 “수수료만 제공하는 제휴사가 아니라, 추천 이후까지 책임지는 커머스 파트너”입니다.</p>
+      <div class="flow">
+        <article class="slide"><small>01 · HOOK</small><h3>20%</h3><p>첫 달 조건으로 즉시 주목</p></article>
+        <article class="slide"><small>02 · PRODUCT</small><h3>팔 만한 상품</h3><p>명품 주얼리 1,300억 + 현대백화점 상품</p></article>
+        <article class="slide"><small>03 · PARTNER</small><h3>같이 만드는 협업</h3><p>브랜드 오너십·공동구매·기획 참여</p></article>
+        <article class="slide"><small>04 · OFFER</small><h3>명확한 조건</h3><p>9.1 공개 · 9.8 시작 · 첫 달 20%</p></article>
+        <article class="slide"><small>05 · TRUST</small><h3>추천 이후 책임</h3><p>품질·배송·교환·환불·CS</p></article>
+        <article class="slide"><small>06 · CTA</small><h3>오늘 시작</h3><p>온보딩·전담채널·현장 혜택</p></article>
+      </div>
+      <div class="callout" style="margin-top:18px">세 가지 킥: ① 상품 경쟁력 ② 크리에이터와 함께 만드는 협업 ③ 상무 직통 연락처로 상징되는 운영 책임</div>
+    </section>
+
+    <section id="facts">
+      <div class="eyebrow">Fact lock & guardrails</div>
+      <h2>확정된 것과 넘지 말아야 할 선</h2>
+      <p class="section-intro">숫자와 표현은 발표 신뢰도를 좌우합니다. 확정되지 않은 약속은 가능성의 언어로만 말합니다.</p>
+      <table>
+        <thead><tr><th>항목</th><th>사용 가능한 표현</th><th>주의</th></tr></thead>
+        <tbody>
+          <tr><td>수수료</td><td class="ok">9/8부터 한 달 20%, 이후 최소 10%</td><td>일부 상품 제외 표기 필수</td></tr>
+          <tr><td>상품</td><td class="ok">명품 주얼리 연 1,300억 매입</td><td>“국내 최대” 금지</td></tr>
+          <tr><td>브랜드</td><td class="ok">라씨엔토, 고비, 프리마클라세</td><td>추가 브랜드는 확정 뒤 반영</td></tr>
+          <tr><td>협업</td><td>공동구매·기획 참여·전용 상품 가능</td><td class="warn">시점·물량·조건 확약 금지</td></tr>
+          <tr><td>현장 혜택</td><td>전원 Hmall 적립금 5만원, 9월 내 사용</td><td>지급 절차 확인 필요</td></tr>
+          <tr><td>코아시스</td><td>카카오채널 등록 선착순 50명 화장품 세트</td><td>수령 동선은 현장 운영진 확인</td></tr>
+          <tr><td>신뢰 지표</td><td>NCSI·KCSI 등 확정된 외부 근거만</td><td>연도·연속 횟수 최종 대조</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="schedule">
+      <div class="eyebrow">Critical path</div>
+      <h2>발표일까지의 권장 일정</h2>
+      <div class="timeline">
+        <article class="milestone"><span>8.21–8.22</span><b>결정 잠금</b><p>직통번호 공개 방식, 6장 유지 여부, 제작 담당자·수정 마감 확정</p></article>
+        <article class="milestone"><span>8.23–8.25</span><b>PPT 검수</b><p>Google 1차본 수령, 숫자·표현·이미지·QR 검수 및 1회 통합 피드백</p></article>
+        <article class="milestone"><span>8.26–8.27</span><b>리허설</b><p>상무님 낭독 2회, 5분 40초 안쪽으로 다듬고 현장본·백업본 확정</p></article>
+        <article class="milestone"><span>8.28</span><b>발표</b><p>발표 파일·PDF·QR·혜택 운영 상태를 현장 도착 전 재확인</p></article>
+      </div>
+    </section>
+
+    <section id="risks">
+      <div class="eyebrow">Owner decision required</div>
+      <h2>후임자가 가장 먼저 잠글 결정 3건</h2>
+      <div class="grid">
+        <article class="card wide risk"><strong>1. 상무 직통번호 공개 방식</strong><p>개인번호인지 회사 명의 업무용 번호인지 확정해야 합니다. 공개한 번호는 회수하기 어렵습니다. <b>공개 저장소에는 절대 기록하지 않습니다.</b></p></article>
+        <article class="card wide risk"><strong>2. 번호 전용 화면의 장수</strong><p>현재는 6장입니다. “검은 화면 한 장”을 슬라이드 06의 전체 화면 연출로 볼지, 실제 7번째 장으로 추가할지 결정해야 합니다.</p></article>
+        <article class="card wide risk"><strong>3. Google PPT 마감</strong><p>1차 시안 수령일, 통합 피드백일, 최종 파일 확정 시간을 Google 담당자와 캘린더로 잠가야 합니다.</p></article>
+        <article class="card wide"><strong>알려진 제약</strong><p>발표일 8/28은 핫딜 페이지 공개일 9/1보다 빠릅니다. 실제 화면 대신 목업 또는 “9월 1일 공개 예정” 상태로 처리합니다.</p></article>
+      </div>
+    </section>
+
+    <section id="runbook">
+      <div class="eyebrow">Edit · Build · Publish</div>
+      <h2>수정하고 배포하는 법</h2>
+      <p class="section-intro">저장소는 공개 상태입니다. 개인 전화번호, 내부 담당자 연락처, 미공개 조건은 로컬 전달 자료에서만 관리합니다.</p>
+      <div class="grid">
+        <article class="card full">
+          <h3>1. 최신본 받고 작업 브랜치 생성</h3>
+          <div class="command">git switch main<br>git pull --ff-only<br>git switch -c agent/&lt;작업명&gt;</div>
+        </article>
+        <article class="card full">
+          <h3>2. 원본 수정 후 Google 전달본 재생성</h3>
+          <div class="command"># final-v1/index.html 수정<br>node build-google.js</div>
+        </article>
+        <article class="card full">
+          <h3>3. 검증 후 필요한 파일만 커밋</h3>
+          <div class="command">git diff --check<br>git status --short<br>git add -- &lt;수정한 파일만 정확히 지정&gt;<br>git commit -m "변경 내용을 설명하는 메시지"</div>
+        </article>
+        <article class="card full">
+          <h3>4. 배포 확인</h3>
+          <p>main 병합 후 GitHub Pages 배포가 끝나면 내부 준비본, Google 전달본, PDF 링크를 각각 열어 확인합니다. PDF는 HTML 변경 뒤 다시 생성해야 합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="done">
+      <div class="eyebrow">Definition of done</div>
+      <h2>발표 전 최종 완료 기준</h2>
+      <div class="card full">
+        <ul class="checklist">
+          <li>발표자 표기: 영업전략담당 이경우 상무</li>
+          <li>전체 6분 이내, 리허설 목표 5분 40초 이하</li>
+          <li>9/1 상품 공개, 9/8 제휴 시작 날짜 일치</li>
+          <li>첫 달 20%, 이후 최소 10%, 일부 상품 제외</li>
+          <li>1,300억은 명품 주얼리 연간 매입 규모로 표현</li>
+          <li>전용 상품은 가능성으로만 표현</li>
+          <li>직통번호 공개 주체와 수신 운영 책임자 확정</li>
+          <li>카카오채널 QR 실제 기기 테스트</li>
+          <li>적립금·코아시스 증정 현장 절차 확정</li>
+          <li>PPT·PDF·폰트·영상의 오프라인 백업 준비</li>
+          <li>공개 저장소에서 개인·내부 정보 재점검</li>
+          <li>Google 담당자 최종본과 이 페이지 내용 일치</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><strong>관리 원칙:</strong> 발표 내용의 원본은 <code>final-v1/index.html</code>입니다. 이 페이지는 2026년 8월 21일 기준 인수인계 상태를 설명합니다.</div></footer>
+</body>
+</html>

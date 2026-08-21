@@ -11,9 +11,12 @@
 
 | | 용도 | 링크 |
 |---|---|---|
+| 프로젝트 인수인계 | 후임자용 기준본·일정·리스크·운영 방법 | [handoff](https://kimyoungil21.github.io/hyundai-shoppingstar-2026/handoff/) |
 | 발표 준비용 | 내부. 전략·전체 원고 포함 | [final-v1](https://kimyoungil21.github.io/hyundai-shoppingstar-2026/final-v1/) |
 | 구글 전달본 | 외부. 큐시트·브리프·체크리스트만 | [google](https://kimyoungil21.github.io/hyundai-shoppingstar-2026/google/) |
 | PDF (10p) | 구글 전달용 | `google/현대홈쇼핑_유튜브쇼핑_PPT제작의뢰서_20260828.pdf` |
+
+세부 작업 이력과 운영 절차는 [`HANDOFF.md`](HANDOFF.md)에 정리되어 있습니다.
 
 구글 전달본은 `node build-google.js` 로 final-v1 에서 다시 뽑습니다.
 PDF 는 크롬 헤드리스 `--print-to-pdf` 로 생성합니다.
